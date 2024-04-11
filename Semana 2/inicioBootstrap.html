@@ -32,8 +32,7 @@
     <div style="background-color: blanchedalmond;">
         <h1>Estos son los inputs</h1>
         <input class="form-control" style="width: 50%" placeholder="Digite su nombre" maxlength="5">
-    
-        <div class="row">
+            <div class="row">
             <div class="col">
                 <input class="form-control" placeholder="Nombre">
             </div>
@@ -46,7 +45,41 @@
             <button class="btn btn Success">Guardar información</button>
         </div>
     </div>
-</div>
-
+    <div style="margin-top: 10px;background-color: chartreuse;">
+        <h1>Estos son selects</h1>
+        <select class="form-select" aria-placeholder="hola mama">
+            <option value="0" selected>Elija su país</option>
+            <option value="1">Costa Rica</option>
+            <option value="2">Panama</option>
+            <option value="3">Nicaragua</option>
+        </select>
+    </div>
+    <div style="margin-top: 10px; background-color: blueviolet;">
+        <h1>Estos son los check and radios</h1>
+        <h3>Estos son los check</h3>
+        <div class="form-check">
+            <input type="checkbox" class="form-check-input">
+            <label>Ver terminos y condiciones</label>
+        </div>
+        <div>
+            <input type="checkbox" class="form-check-input" id="flexCheckChecked">
+            <label class="form-check-label" for="checkMayorEdad">Soy una persona mayor de edad</label>
+            <br>
+            <label class="form-check-label"><input class="form-check-input" type="checkbox"> Dame click</label>
+        </div>
+        <h3>Estos son los radios</h3>
+        <div>
+            <input class="form-check-input" name="radioSexo" type="radio" id="radioValor1">
+            <label class="form-check-label" for="radioValor1">Masculino</label>
+        </div>
+        <div>
+            <input class="form-check-input" name="radioSexo" type="radio" id="radioValor2">
+            <label class="form-check-label" for="radioValor2">Femenino</label>
+        </div>
+        <div>
+            <input class="form-check-input" name="radioSexo" type="radio" id="radioValor3">
+            <label class="form-check-label" for="radioValor3">No definido</label>
+        </div>
+    </div>
 </body>
 </html>
