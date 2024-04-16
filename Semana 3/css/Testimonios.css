@@ -5,6 +5,7 @@
     margin: 10px 10px 50px;
     background-color: rgba(26, 215, 155, 0.924);
     box-shadow: 0 8px 10px 10px rgb(0 0 0 / 9%);
+    /*Horizontal, vertical, desenfoque, degradado*/
 
     /*Son etiquetas para reubicar otras etiquetas*/
     align-items: center;
