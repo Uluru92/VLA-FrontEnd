@@ -1,0 +1,35 @@
+.contenedorTestimonio
+{
+    width: 1170px;
+    height: 370px;
+    margin: 10px 10px 50px;
+    background-color: rgba(26, 215, 155, 0.924);
+    box-shadow: 0 8px 10px 10px rgb(0 0 0 / 9%);
+
+    /*Son etiquetas para reubicar otras etiquetas*/
+    align-items: center;
+    justify-content: center;
+    display: flex;
+
+}
+
+.imagenTestimonio
+
+{
+    height: 100%;
+    width: auto;
+}
+
+.contenedorTextoTestimonio
+{
+    padding: 40px;
+    font-family: sans-serif;
+    text-align: center;
+}
+
+.nombreTestimonio
+{
+    font-size: 20px;
+    margin-top: 15 px;
+    margin-bottom: 30px;
+}
