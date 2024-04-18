@@ -10,7 +10,7 @@
 
 .contornoImagen
 {
-    opacity: 0.8;
+    opacity: 0.8; /*transparencia de la imagen del 0 al 1*/
     width: 100%; 
     height: 100%;
 }
