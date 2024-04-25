@@ -54,21 +54,25 @@ classroom en el hito acorde al rubro.
         <input type="text">
         <br>
         <div>
-            <h3>Seleccione los cursos que desea llevar</h3>
-            <label class="form-check-label"><input class="form-check-input" type="checkbox">Calculo 1</label>
-            <br>
-            <label class="form-check-label"><input class="form-check-input" type="checkbox">Calculo 2</label>
-            <br>
-            <label class="form-check-label"><input class="form-check-input" type="checkbox">Calculo 3</label>
-            <br>
-            <label class="form-check-label"><input class="form-check-input" type="checkbox">Fisica 1</label>
-            <br>
-            <label class="form-check-label"><input class="form-check-input" type="checkbox">Fisica 2</label>
-            <br>
-            <label class="form-check-label"><input class="form-check-input" type="checkbox">Algebra</label>
-            <br>
-            <label class="form-check-label"><input class="form-check-input" type="checkbox">Ecuaciones diferenciales</label>
-            <br>
+            <h3>Seleccione el curso que desea matricular</h3>
+            <select class="form-select" aria-placeholder="hola mama">
+                <option value="0" selected>Cursos disponibles</option>
+                <option value="1">Calculo 1</option>
+                <option value="2">Calculo 2</option>
+                <option value="3">Calculo 3</option>
+                <option value="4">Fisica 1</option>
+                <option value="5">Física 2</option>
+                <option value="6">Ecuaciones diferenciales</option>
+                <option value="6">Algebra</option>
+            </select>
+        </div>
+        <br>
+        <div>
+            <label class="form-check-label">
+            <input class="form-check-input" type="checkbox">Acepto términos y condiciones</label>
+        </div>
+        <div>
+            <button type="button" class="btn btn-success">Validar información</button>
         </div>
     </div>
 </body>
