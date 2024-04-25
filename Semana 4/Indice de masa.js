@@ -1,4 +1,3 @@
-
 var peso = 63
 var altura = 1.71
 IMC = peso / (altura*altura)
