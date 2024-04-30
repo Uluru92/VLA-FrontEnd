@@ -1,5 +1,4 @@
-<!--
-TAREA #1 Instrucciones:
+<!--TAREA #1 Instrucciones:
 Utilizando HTML y CSS, crea un formulario web que solicite  :
 Nombre (input)
 Apellidos (input)
@@ -10,13 +9,9 @@ Edad (input)
 Curso interesado en llevar (select)
 Aceptar términos y condiciones (checkbox)
 Botón de validar información
-Diseña el formulario de manera atractiva y funcional 
-utilizando CSS para darle estilo.
-Asegúrate de que el formulario sea fácil de entender y 
-navegar para el usuario.
-Debe subir el trabajo en un archivo comprimido en el 
-classroom en el hito acorde al rubro.
--->
+Diseña el formulario de manera atractiva y funcional utilizando CSS para darle estilo.
+Asegúrate de que el formulario sea fácil de entender y navegar para el usuario.
+Debe subir el trabajo en un archivo comprimido en el classroom en el hito acorde al rubro. -->
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -33,18 +28,12 @@ classroom en el hito acorde al rubro.
                 <img class="contornoImagen" src="imagenes/Estudiantesjpeg.jpeg"> <!--DE ESTA MANERA INSERTAMOS UNA IMAGEN!-->
                 <div class="contenedorImagenPalabras">
                     <h3>Datos del estudiante</h3>
-                    <label>Nombre</label>
-                    <input type="text">
-                    <br>
-                    <label>Apellidos</label>
-                    <input type="text">
-                    <br>
-                    <label>Teléfono</label>
-                    <input type="text">
-                    <br>
-                    <label>Correo electrónico</label>
-                    <input type="text">
-                    <br>
+                    <input class="form-control" placeholder="Nombre">
+                    <input class="form-control" placeholder="Primer apellido">
+                    <input class="form-control" placeholder="Segundo apellido">
+                    <input class="form-control" placeholder="Teléfono">
+                    <input class="form-control" placeholder="Correo electrónico">
+
                     <select class="form-select" aria-placeholder="hola mama">
                         <option value="0" selected>País de origen</option>
                         <option value="1">Costa Rica</option>
@@ -54,10 +43,7 @@ classroom en el hito acorde al rubro.
                         <option value="5">Francia</option>
                         <option value="6">China</option>
                     </select>
-                    <br>
-                    <label>Edad</label>
-                    <input type="text">
-                    <br>
+                    <input Type="number" class="form-control" placeholder="Edad">
                 </div>
             </div>
             <h3>Cursos disponibles</h3>
