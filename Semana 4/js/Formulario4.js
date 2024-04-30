@@ -12,7 +12,7 @@ $(document).ready(function () {
         var var1 = document.getElementById("valor1").value;
         var var2 = document.getElementById("valor2").value;
 
-        var1 = parseFloat (var1)
+        var1 = parseFloat(var1)
         var2 = parseFloat(var2)
         var var3 = var1 + var2
         alert("Resultado: " + var3)
@@ -22,10 +22,9 @@ $(document).ready(function () {
 });
 
 /*
-   Crear un javascript que se llame Formulario3.js, que tiene lo mismo de Formulario2.js
-   adicional crear un html que se llame Formulario3.html, que tiene lo mismo que Formulario2.html
-       un input para capturar un valor 1 pensar que es un numero
-       un input para capturar un valor 2 pensar que es un numero
-   boton que es capturar Dato,
-   Usted al momento de dar clic, va a captar el valor1 y valor2, sumarlos y mostrarlos en un alert y en un console
+Quiero que cree un html que sea formulario4.html y su js que sea Formualrio4.js
+Es el campo de una edad,
+Yo quiero que usted me diga que si la edad >18, por medio de un console.log o un alert
+Me diga si es mayor o menor de edad
+Input y un boton
 */
