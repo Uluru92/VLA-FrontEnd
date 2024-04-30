@@ -5,16 +5,25 @@ $(document).ready(function () {
     console.log(botonCapturarData)
     botonCapturarData.addEventListener("click", function () {
         var edad = document.getElementById("edad").value;
-        var edad = parseFloat(edad)
-        if (edad < 18)
+
+        console.log("El valor de edad es: "+ edad)
+
+        if (edad != "")
         {
-            alert("Es menor de edad")
-            console.log("Es menor de edad")
+            if (parseInt(edad) >= 18)
+                {
+                document.getElementById("mensajeEdad").innerHTML = "Es un persona mayor de edad"
+                }
+            else
+                {
+                document.getElementById("mensajeEdad").innerHTML = "Es un persona menor de edad"
+            }
+            document.getElementById("edad").style.borderColor = ""
         }
         else
         {
-            alert("Es mayor de edad")
-            console.log("Es mayor de edad")
+            document.getElementById("edad").style.borderColor = "red"
+            document.getElementById("mensajeEdad").innerHTML = "El espacio está vacío"
         }
     });
 });
