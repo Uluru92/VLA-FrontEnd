@@ -1,7 +1,15 @@
 h1 
 {
-    color: rgb(184, 221, 223);
-    background-color: rgb(110, 213, 218);
+
+    background-color: rgb(212, 250, 252);
+}
+h2 
+{
+    background-color: rgb(189, 189, 189);
+}
+h3 
+{
+    background-color: rgb(226, 255, 62);
 }
 
 .estiloTituloPrincipal
@@ -16,15 +24,15 @@ h1
 .contornoImagen 
 {
     opacity: 0.5;
-    /*transparencia de la imagen del 0 al 1*/
     width: 100%;
     height: 100%;
 }
 
 .contenedorImagenPalabras 
 {
-    position: absolute;
+    position:absolute;
     top: 10%;
     left: 10%;
-    background-color: azure;
+    right: 10%;
+    background-color: rgb(255, 255, 255);
 }
