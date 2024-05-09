@@ -1,0 +1,19 @@
+.btn-vla{
+    color: #ffff;
+    background-color: #00ff22;
+    border-color: #000000;
+}
+
+.btn-vla:hover
+{
+    color: #ffffff;
+    background-color: #0b8900;
+    border-color: #000000;
+}
+
+.btn-vla:focus 
+{
+    color: #000000;
+    background-color: #ff0000;
+    border-color: #fbff00;
+}
