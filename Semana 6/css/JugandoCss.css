@@ -1,0 +1,108 @@
+.btn-vla{
+    color: #ffff;
+    background-color: #00ff22;
+    border-color: #000000;
+}
+
+.btn-vla:hover
+{
+    color: #ffffff;
+    background-color: #0b8900;
+    border-color: #000000;
+}
+
+.btn-vla:focus 
+{
+    color: #000000;
+    background-color: #ff0000;
+    border-color: #fbff00;
+}
+
+.btn-tran
+{
+    color: #ffff;
+    background-color: #00ff22;
+    border-color: #1b670d;
+    transition:background-color 2s, color 2s, border-color 2s;
+}
+.btn-tran:hover
+{
+    color: #f2ff00;
+    background-color: #ffae90;
+    border-color: #ff0000;
+}
+
+@keyframes CambiarColor
+{
+    0%{
+         background-color: #ffffff;
+         transform: translateX(0);
+        }
+    50%{
+        background-color: #1CA42E;
+        transform: translateX(40px);
+    }
+    100%{
+        background-color: #ff0000;
+        transform: translateX(400px);
+    }
+}
+
+.btn-ani
+{
+    color: #ffff;
+    background-color: #00ff22;
+    border-color: #1b670d;
+    animation: CambiarColor 2s ease-in-out infinite;
+            /* ease-in-out es para ''explotar'' al maximo la propiedad... se puede ver como exponencial*/
+}
+
+.img-ani
+{
+    width: 100px;
+    height: 100px;
+    animation: CambiarColor 3s ease-in-out infinite
+}
+
+.circulo-contenedor
+{
+    width: 200px;
+    height: 200px;
+    border-radius: 50%;
+    overflow: hidden;
+}
+
+.circulo-contenedor iframe
+{
+        width: 200px;
+        height: 200px;
+        border: none;
+}
+
+option
+{
+    color: #ff0000;
+}
+
+select
+{
+
+}
+
+.jugandoSelect option
+{
+    color: #00ff22;
+}
+
+.TextoIzquierda 
+{
+text-align: left;
+}
+.TextoCentro
+{
+text-align: center;
+}
+.TextoDerecha
+{
+text-align: right;
+}
