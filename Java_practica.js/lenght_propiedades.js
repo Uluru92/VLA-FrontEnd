@@ -28,8 +28,10 @@ console.log(Object.keys(frutas)); // ['0', '1', '2', '5']
 console.log("la nueva longitud del array frutas es:", frutas.length); // 10
 console.log(frutas[8]); // undefined ya que este espacio se creo vacío
 
-frutas.length = 2; // disminuimos la longitud del array... se eliminan espacios y perdemos información
-console.log("array frutas:", frutas);// ['banana', 'manzana]
-console.log(Object.keys(frutas)); // ['0', '1']
-console.log("la nueva longitud del array frutas es:", frutas.length); // 2
+frutas.length = 5; // disminuimos la longitud del array... se eliminan espacios y perdemos información
+console.log("array frutas:", frutas);
+console.log(Object.keys(frutas));
+console.log("la nueva longitud del array frutas es:", frutas.length);
 
+reverse_frutas = frutas.reverse() //le hacemos un reverse al array y todo da tavuel
+console.log("array frutas:", reverse_frutas);
