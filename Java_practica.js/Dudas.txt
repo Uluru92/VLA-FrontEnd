@@ -1,0 +1,3 @@
+DUDAS PARA EL PROFESOR ADOLFO FRONTEND:
+
+Cual es la diferencia entre let/var/const?

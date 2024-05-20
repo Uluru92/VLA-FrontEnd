@@ -1,7 +1,7 @@
 var valor1 = 1
 var valor2 = 2
 var valor3 = 3
-var valor4 = 5
+var valor4 = 2
 
 if (valor4 == valor1) {
     console.log("Estudiante Regular")
