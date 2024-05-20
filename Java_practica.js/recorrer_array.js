@@ -58,5 +58,9 @@ let arr = [
 ];
 console.log("El array arr es:",arr)
 console.log(arr[0]); // escribe en consola 'este es el primer elemento'
+console.log(arr["0"]); // es lo mismo escribir 0 o "0"
 console.log(arr[1]); // escribe en consola 'este es el segundo elemento'
+//console.log(arr[01]); // escribe en consola 'este es el segundo elemento'
+console.log(arr["01"]); //OJO en este caso "01" es undefined, porque??
 console.log(arr[arr.length - 1]); // escribe en consola 'este es el último elemento'
+

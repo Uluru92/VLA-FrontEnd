@@ -1,3 +1,15 @@
 DUDAS PARA EL PROFESOR ADOLFO FRONTEND:
 
-Cual es la diferencia entre let/var/const?
+1) Cual es la diferencia entre let/var/const?
+2) si array[0] = array["0"] y array[1]= array[01]... ¿porque array[01] != array["01"]? ...en este caso array["01"] se indefine...
+
+Dado: let array = [
+    "este es el primer elemento",
+    "este es el segundo elemento",
+    "ASD",
+    "XXX",
+    "este es el último elemento",
+];
+
+3)
+
