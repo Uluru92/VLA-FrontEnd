@@ -11,6 +11,6 @@ Dado: let array = [
     "este es el último elemento",
 ];
 
-3)cual es la diferencia entre =, ==, ===
-4)
+3)cual es la diferencia entre =, ==, === (lo utilizaron en matriz unidimensional)
+4)Explicar uso de -tablero.join("\n") + "\n\n"- en matriz bidimensional
 
