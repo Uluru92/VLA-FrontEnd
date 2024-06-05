@@ -18,13 +18,13 @@ while (isNaN(length1)) {
     }
 } 
 while (isNaN(length2)) {
-    var length2 = parseFloat(prompt("length 1: "))
+    var length2 = parseFloat(prompt("length 2: "))
     if (isNaN(length2)) {
         console.log("lets try again!... make sure you enter the second lenght using only numbers")
     }
 } 
 while (isNaN(length3)) {
-    var length3 = parseFloat(prompt("length 1: "))
+    var length3 = parseFloat(prompt("length 3: "))
     if (isNaN(length3)) {
         console.log("lets try again!... make sure you enter the third lenght using only numbers")
     }
@@ -36,7 +36,22 @@ console.log("side 3:", length3)
 
 console.log("...now let's calculate if the triangulo is Equilateral, Isosceles or Scalene...")
 console.log("...loading...")
+console.log("...loading...")
+console.log("...loading...")
 
-console.log("...Result: the triangule is Equilateral")
-console.log("...Result: the triangule is Isosceles")
-console.log("...Result: the triangule is Scalene")
+if (length1 == length2 && length1 == length3 && length2 == length3)
+{
+    console.log("...Result: the triangule is Equilateral")
+}
+if (length1 == length2 && length1 != length3 && length2 != length3) {
+    console.log("...Result: the triangule is Isosceles")
+}
+if (length1 != length2 && length1 == length3 && length2 != length3) {
+    console.log("...Result: the triangule is Isosceles")
+}
+if (length1 != length2 && length1 != length3 && length2 == length3) {
+    console.log("...Result: the triangule is Isosceles")
+}
+if (length1 != length2 && length1 != length3 && length2 != length3) {
+    console.log("...Result: the triangule is Scalene")
+}
