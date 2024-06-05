@@ -1,0 +1,1 @@
+/*Escribe un programa que tome tres números como entrada, que representan las longitudes de los lados de un triángulo, y determine si es equilátero (todos los lados iguales), isósceles (dos lados iguales) o escaleno (ningún lado igual).*/
