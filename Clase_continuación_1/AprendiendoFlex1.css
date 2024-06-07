@@ -1,11 +1,12 @@
-.contenedor {
+.contenedor 
+{
     display: flex;
     flex-wrap:wrap;
     /*flex-direction: row-reverse;*/
-
 }
 
-.elemento {
+.elemento 
+{
     width: 100px;
     height: 100px;
     background-color: rgb(13, 110, 110);
