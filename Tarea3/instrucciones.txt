@@ -1,0 +1,13 @@
+Cree una carpeta con el nombre "Tarea1-Nombre", cree una página
+index.html. Suministre en el proyecto el cdn de boostrap, crear un
+archivo javascript con el siguiente nombre validaciones.js y relacione
+el archivo con la página index.html.
+
+Realizar el siguiente ejercicio:
+Cree un campo input de tipo password.
+Cree un título, label, que se coloque a la par del input.
+Por medio de un evento input, realizar la siguiente validación:
+                 Si el input es menor a 5 caracteres, colocar el título en rojo.
+                 Si el input está entre 6 y 10 caracteres, colocar el titulo en anaranjado.
+                 Si el input es mayor a 11 caracteres, colocar el titulo en verde.
+
