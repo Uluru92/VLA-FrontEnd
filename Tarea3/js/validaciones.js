@@ -1,23 +1,22 @@
 $(document).ready(function () {
 
-    let input_ = document.getElementById("clave").value.length;
+    let input_ = document.getElementById("clave");
+    let titulo = document.getElementById("titulo")
 
-    
-    
-    if (input_ == "")
-    {
-        document.getElementById("textoEdad").style.borderColor = "red";
-        document.getElementById("mensajeEdad").innerHTML = "No puede dejar campos vacios";
-    }
-    else {
-        if (parseInt(edad) >= 18) {
-            document.getElementById("mensajeEdad").innerHTML = "Es una persona mayor de edad";
+    input_.addEventListener("input", function () {
+        let input_long = parseInt(input_.value.length);
+        if (input_long < 6) {
+            titulo.classList.add("weak")
+            titulo.classList.remove("medium", "strong")
         }
-        else {
-            document.getElementById("mensajeEdad").innerHTML = "Es una persona menor de edad";
+        else if (6 <= input_long && input_long <= 10) {
+            titulo.classList.add("medium")
+            titulo.classList.remove("weak", "strong")
         }
-
-        document.getElementById("textoEdad").style.borderColor = "";
-    }
-
+        else if (input_long > 10) {
+            titulo.classList.add("strong")
+            titulo.classList.remove("weak", "medium")
+        }
+        }
+    )
 })

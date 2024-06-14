@@ -17,7 +17,6 @@ $(document).ready(function()
         }
         else
         {
-            
             let valor1Validado = ValidarSoloNumeros(valor1);
             let valor2Validado = ValidarSoloNumeros(valor2);
 

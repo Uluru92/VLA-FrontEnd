@@ -21,15 +21,15 @@
 .btn-tran
 {
     color: #ffff;  
-    background-color: #1CA42E; 
-    border-color: #1CA42E;
+    background-color: #9b1ca4; 
+    border-color: #a41c89;
     transition: background-color 2s, color 2s, border-color 2s;
 }
 
 .btn-tran:hover
 {
     color: #c3ec0a;  
-    background-color: #27377e;     
+    background-color: #277e3a;     
     border-color: #27377e;;
 }
 
