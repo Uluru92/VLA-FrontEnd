@@ -5,7 +5,7 @@ $(document).ready(function () {
 
     input_.addEventListener("input", function () {
         let input_long = parseInt(input_.value.length);
-        if (input_long < 6) {
+        if (0 < input_long && input_long < 6) {
             titulo.classList.add("weak")
             titulo.classList.remove("medium", "strong")
         }
@@ -16,6 +16,9 @@ $(document).ready(function () {
         else if (input_long > 10) {
             titulo.classList.add("strong")
             titulo.classList.remove("weak", "medium")
+        }
+        else if (input_long == 0) {
+            titulo.classList.remove("weak", "medium", "strong")
         }
         }
     )

@@ -1,0 +1,43 @@
+Observaciones:
+ La fecha límite de entrega es el miércoles 5 de junio.
+ La ejecución de la actividad es de forma individual.
+ Se debe realizar una presentación al grupo de no más de 5 minutos sobre el diseño
+implementado.
+
+Indicaciones del proyecto:
+1. Debe realizar una página pensando en un curriculum digital.
+2. El curriculum debe tener los siguientes apartados:
+
+Apartado Descripción
+Datos Personales Se debe colocar los siguientes datos:
+a. Nombre completo.
+b. Teléfono.
+c. Residencia.
+d. Correo electrónico.
+e. Enlace de LinkedIn
+Experiencia Laboral Colocar los siguientes datos:
+
+a. Lugar.
+b. Fecha de inicio y fecha de finalización.
+c. Descripción de las tareas realizadas.
+
+Educación Colocar los siguientes datos:
+
+a. Lugar.
+b. Año de graduación.
+c. Título obtenido.
+d. El programador debe buscar la forma de colocar una imagen del
+título obtenido.
+
+Idiomas Colocar los idiomas que maneja y el porcentaje que tiene tanto verbal
+
+como escrito.
+
+Certificaciones Colocar los siguientes datos:
+a. Nombre de la certificación.
+b. Año
+c. Número o código de referencia de la certificación.
+
+Datos adicionales Este apartado es decir si maneja vehículos y los tipos de licencia, si tiene
+
+pasaporte y visa americana.
