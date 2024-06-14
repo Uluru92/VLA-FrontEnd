@@ -1,9 +1,3 @@
-Observaciones:
- La fecha límite de entrega es el miércoles 5 de junio.
- La ejecución de la actividad es de forma individual.
- Se debe realizar una presentación al grupo de no más de 5 minutos sobre el diseño
-implementado.
-
 Indicaciones del proyecto:
 1. Debe realizar una página pensando en un curriculum digital.
 2. El curriculum debe tener los siguientes apartados:
