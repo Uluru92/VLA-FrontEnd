@@ -1,4 +1,7 @@
-$(document).ready(function()
+$(function () {
+    $('#menu-placeholder').load('Menu.html')
+})
+$(document).ready(function ()
 {
     let contadorPersonas = 1;
     let vectorNombres = ['Samuel', 'Natalia', 'Angie'];

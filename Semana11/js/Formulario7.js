@@ -1,4 +1,7 @@
-$(document).ready(function()
+$(function () {
+    $('#menu-placeholder').load('Menu.html')
+})
+$(document).ready(function ()
 {  
     let botonSumar = document.getElementById("botonSumar");
     let botonRestar = document.getElementById("botonRestar");

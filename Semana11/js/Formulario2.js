@@ -1,4 +1,7 @@
-$(document).ready(function(){
+$(function () {
+    $('#menu-placeholder').load('Menu.html')
+})
+$(document).ready(function () {
     /*Guardar el boton en una variable*/ 
     /*Capturar las propiedad de la etiqueta botonCapturarDato*/   
     var botonCapturarDato = document.getElementById("botonCapturarDato");

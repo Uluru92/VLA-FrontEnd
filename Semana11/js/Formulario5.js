@@ -1,4 +1,8 @@
-$(document).ready(function()
+$(function () {
+    $('#menu-placeholder').load('Menu.html')
+})
+
+$(document).ready(function ()
 {
     var selectCursos = document.getElementById("comboCursos");
     var selectEdad = document.getElementById("edadPersona");
