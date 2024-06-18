@@ -1,0 +1,108 @@
+.btn-vla{
+    color: #ffff;
+    background-color: #1CA42E;
+    border-color: #1CA42E;
+}
+
+.btn-vla:hover
+{
+    color: #ffff;
+    background-color: #13651d;
+    border-color: #13651d;
+}
+
+.btn-vla:focus
+{
+    color: #ffff;
+    background-color: #db1c1c;
+    border-color: #db1c1c;
+}
+
+.btn-tran
+{
+    color: #ffff;  
+    background-color: #1CA42E; 
+    border-color: #1CA42E;
+    transition: background-color 2s, color 2s, border-color 2s;
+}
+
+.btn-tran:hover
+{
+    color: #c3ec0a;  
+    background-color: #27377e;     
+    border-color: #27377e;;
+}
+
+@keyframes cambiarColor
+{
+    0% 
+    { 
+        background-color: #1CA42E; 
+        transform: translateX(0);
+    }
+    50% 
+    { 
+        background-color: #13651d; 
+        transform: translate(150px);
+    }
+    100% 
+    {
+        background-color: #db1c1c; 
+        transform: translateX(300px);
+    }
+}
+
+.btn-ani 
+{
+    color: #ffff;  
+    background-color: #1CA42E; 
+    border-color: #1CA42E;
+    animation: cambiarColor 4s ease-in-out infinite;   
+}
+
+.img-ani
+{
+    width: 100px;
+    height: 100px;
+    animation: cambiarColor 3s ease-in-out infinite; 
+}
+
+.circulo-contenedor
+{
+    width: 200px;
+    height: 200px;
+    border-radius: 50%;
+    overflow: hidden;
+}
+
+.circulo-contenedor iframe
+{
+    width: 100%;
+    height: 100%;
+    border: none;
+}
+
+option 
+{
+    color: #db1c1c;
+}
+
+.jugandoSelect option
+{
+    color: #27800c;
+}
+
+.TextoIzquierda
+{
+    text-align: left;
+}
+
+.TextoCentro
+{
+    text-align: center;
+}
+
+.TextoDerecha 
+{
+    text-align: right;
+}
