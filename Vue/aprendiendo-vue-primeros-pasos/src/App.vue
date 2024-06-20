@@ -4,16 +4,21 @@
   NombrePersona = 'Adolfo'
   EdadPersona = 31 />
 
+    <SumarDosValores/>
+
+
 </template>
 
 <script>
-  import SaludoMundo from './components/SaludoMundo.vue'
+import SaludoMundo from './components/SaludoMundo.vue'
+import SumarDosValores from './components/SumarDosValores.vue'
 
 
 export default {
   name: 'App',
   components: {
-    SaludoMundo
+    SaludoMundo,
+    SumarDosValores
 
   }
 }
