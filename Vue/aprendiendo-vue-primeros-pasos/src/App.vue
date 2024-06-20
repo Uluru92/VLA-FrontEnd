@@ -9,7 +9,7 @@
   EdadPersona = 32s
   />
   <SaludoMundo
-  NombrePersona = 'Kimberly'
+  NombrePersona = 'Kevin'
   EdadPersona = '33s'
   />
 
