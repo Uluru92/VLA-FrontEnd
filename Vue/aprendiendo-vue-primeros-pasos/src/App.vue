@@ -2,16 +2,7 @@
   <img alt="Vue logo" src="./assets/logo.png">
   <SaludoMundo
   NombrePersona = 'Adolfo'
-  EdadPersona = 31
-  />
-  <SaludoMundo
-  NombrePersona = 'Jorddy'
-  EdadPersona = 32s
-  />
-  <SaludoMundo
-  NombrePersona = 'Kevin'
-  EdadPersona = '33s'
-  />
+  EdadPersona = 31 />
 
 </template>
 
