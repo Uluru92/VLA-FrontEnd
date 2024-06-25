@@ -9,14 +9,13 @@ b. Teléfono.
 c. Residencia.
 d. Correo electrónico.
 e. Enlace de LinkedIn
-Experiencia Laboral Colocar los siguientes datos:
 
+Experiencia Laboral Colocar los siguientes datos:
 a. Lugar.
 b. Fecha de inicio y fecha de finalización.
 c. Descripción de las tareas realizadas.
 
 Educación Colocar los siguientes datos:
-
 a. Lugar.
 b. Año de graduación.
 c. Título obtenido.
@@ -24,7 +23,6 @@ d. El programador debe buscar la forma de colocar una imagen del
 título obtenido.
 
 Idiomas Colocar los idiomas que maneja y el porcentaje que tiene tanto verbal
-
 como escrito.
 
 Certificaciones Colocar los siguientes datos:
@@ -33,5 +31,4 @@ b. Año
 c. Número o código de referencia de la certificación.
 
 Datos adicionales Este apartado es decir si maneja vehículos y los tipos de licencia, si tiene
-
 pasaporte y visa americana.
