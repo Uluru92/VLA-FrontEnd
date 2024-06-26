@@ -1,0 +1,9 @@
+.elemento {
+    width: 400px;
+    height: 100%;
+    background-color: #3498db;
+    color: white;
+    margin: 10px;
+    justify-content: center;
+    align-items: center;
+}
