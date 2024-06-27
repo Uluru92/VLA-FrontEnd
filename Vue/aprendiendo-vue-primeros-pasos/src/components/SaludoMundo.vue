@@ -1,16 +1,15 @@
 <template>
-    <!-- Todo el html que yo quiera-->
-     <div style="background-color:antiquewhite;">
-        <h1> Estoy saludando, estoy vivo</h1>
+    <!--Todo el html que yo quiera-->  
+    <div style="background-color: #F99580; margin-top: 2px; margin-bottom: 2px;">
         <h1>Mi nombre es {{NombrePersona}}</h1>
-        <h1>Tengo: {{EdadPersona}} anios</h1>
-        <button class="btn btn-primary" @click="SaludarMundo">Saludar</button>
+        <h1>Tengo: {{ EdadPersona }} anios</h1>    
+        <button class="btn btn-primary" @click="SaludarMundo()">Saludar</button>
         <h2>{{ mensaje }}</h2>
-     </div>
-
+    </div>  
 </template>
-<script>
-/* Todo el javascript del componente */
+
+<script>   
+
     export default
     {
         props:
@@ -22,17 +21,18 @@
         {
             SaludarMundo()
             {
-                /*alert(`Hola ${this.NombrePersona}`)*/
-                this.mensaje = `Hola ${this.NombrePersona} espero estes bien`;
+                this.mensaje = `Hola ${this.NombrePersona} espero que estes bien`;                
             }
-        },
+        }, 
         data()
         {
             return {
-                mensaje: `asdasd`
+                mensaje:""                
             }
         }
     }
 </script>
+
 <style>
+    
 </style>

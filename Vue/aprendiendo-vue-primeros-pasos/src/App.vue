@@ -1,25 +1,20 @@
 <template>
   <img alt="Vue logo" src="./assets/logo.png">
-  <SaludoMundo
-  NombrePersona = 'Adolfo'
-  EdadPersona = 31 />
-
-    <SumarDosValores/>
-
-
+  <SaludoMundo 
+    NombrePersona = 'Adolfo' 
+    EdadPersona= '31'/>  
+  <SumarDosValores></SumarDosValores>
 </template>
 
 <script>
-import SaludoMundo from './components/SaludoMundo.vue'
-import SumarDosValores from './components/SumarDosValores.vue'
-
+  import SaludoMundo from './components/SaludoMundo.vue'
+  import SumarDosValores from './components/SumarDosValores.vue'
 
 export default {
   name: 'App',
   components: {
     SaludoMundo,
     SumarDosValores
-
   }
 }
 </script>

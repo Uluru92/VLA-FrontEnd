@@ -1,10 +1,8 @@
 .elemento {
     background-color: #e4e4e4;
-    color: rgb(0, 0, 0);
 }
 .elemento2 {
-        background-color: #e4e4e418;
-        color: rgb(0, 0, 0);
+    background-color: #e4e4e418;;
     }
 
 .titulo {
@@ -12,6 +10,5 @@
     width: 100%;
     background-color: #3498db7e;
     color: white;
-    margin: 10px;
     text-align:center;
 }
