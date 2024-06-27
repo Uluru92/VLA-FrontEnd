@@ -12,17 +12,52 @@
         crossorigin="anonymous"></script>
 </head>
 
+Educación Colocar los siguientes datos:
+a. Lugar.
+b. Año de graduación.
+c. Título obtenido.
+d. El programador debe buscar la forma de colocar una imagen del
+título obtenido.
+
 <body>
     <div id="menu-placeholder"></div>
+
     <div class="container">
-        <h1>CV Jorddy</h1>
+        <div class="titulo">
+            <h1 class="text">Academic Background</h1>
+        </div>
     </div>
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
-    <script>
-        $(function () {
-            $('#menu-placeholder').load('menuCV.html');
-        })
-    </script>
+
+    <div>
+        <table class="container">
+            <thead>
+                <tr class="elemento">
+                    <th>Place</th>
+                    <th>Graduation Year</th>
+                    <th>Degree</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr class="elemento2">
+                    <td>Universidad de Costa Rica</td>
+                    <td>2019</td>
+                    <td>Licenciatura en Ingeniería Civil</td>
+                </tr>
+            </tbody>
+        </table>
+    </div>
+    <div class="container">
+        <img src="./img/Titulo UCR Lic Ing Civil.jpeg">        
+    </div>
+    
+
+        
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+        <script>
+            $(function () {
+                $('#menu-placeholder').load('menuCV.html');
+            })
+        </script>
 </body>
 
 </html>

@@ -3,7 +3,7 @@ Indicaciones del proyecto:
 2. El curriculum debe tener los siguientes apartados:
 
 Apartado Descripción
-Datos Personales Se debe colocar los siguientes datos:
+Datos Personales Se debe colocar los siguientes datos: DONE
 a. Nombre completo.
 b. Teléfono.
 c. Residencia.
