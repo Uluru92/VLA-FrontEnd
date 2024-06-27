@@ -14,13 +14,43 @@
 
 <body>
     <div id="menu-placeholder"></div>
-    <div class="container">PERSONAL INFORMATION</div>
-    <div class="container">ID number: 114980956</div>
-    <div class="container">Nationality: Costarrican</div>
-    <div class="container">Civil status: Single</div>
-    <div class="container">Residence: Montes de Oca, San José</div>
-    <div class="container">Phone number: 87900040</div>
-    <div class="container">E-mail: jorddy.castro@gmail.com</div>
+    <div class="container">
+        <div class="titulo">
+            <h1 class="text">PERSONAL INFORMATION</h1>
+        </div>
+    </div>
+    <table class="container">
+        <tbody>
+            <tr class="elemento">
+                <th>ID number</td>
+                <td>1-1498-0956</td>
+            </tr>
+            <tr class="elemento2">
+                <th>Nationality</td>
+                <td>Costarrican</td>
+            </tr>
+            <tr class="elemento">
+                <th>Civil status</td>
+                <td>Single</td>
+            </tr>
+            <tr class="elemento2">
+                <th>Residence</td>
+                <td>Barrio Escalante, San José, Costa Rica</td>
+            </tr>
+            <tr class="elemento">
+                <th>Phone number</td>
+                <td>(+506) 8790-0040</td>
+            </tr>
+            <tr class="elemento2">
+                <th>E-mail</td>
+                <td>jorddy.castro@gmail.com</td>
+            </tr>
+            <tr class="elemento">
+                <th>LinkedIn</td>
+                <td><a href="https://www.linkedin.com/in/jorddy-castro-araya-a5b3a9244/">Visit my profile!</a></td>
+            </tr>
+        </tbody>
+    </table>
 
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
     <script>
@@ -28,6 +58,11 @@
             $('#menu-placeholder').load('menuCV.html');
         })
     </script>
+        <style>
+            th,td {
+                border: 1px solid black;
+                padding: 10px;
+            }
+        </style>
 </body>
-
 </html>
