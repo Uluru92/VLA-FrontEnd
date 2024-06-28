@@ -1,8 +1,8 @@
 .elemento {
-    background-color: #e4e4e4;
+    background-color: #dadadad9;
 }
 .elemento2 {
-    background-color: #e4e4e418;;
+    background-color: #b3b3b3e1;;
     }
 
 .titulo {
@@ -13,6 +13,29 @@
     text-align:center;
 }
 
+table {
+    height: 100%;
+    width: 100%;
+}
+
 .imagenUCR {
         background-color: #0000007e;
+}
+
+.contenedorImagen {
+    position: relative;
+}
+
+.contenedorImagenPalabras {
+    position: absolute;
+    top: 2%;
+    left: 7%;
+    right: 7%;
+    bottom: 2%;
+}
+
+.contornoImagen {
+    opacity: 0.9;
+    height: 110%;
+    width: 110%;
 }
