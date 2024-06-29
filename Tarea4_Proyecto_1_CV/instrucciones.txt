@@ -15,7 +15,7 @@ a. Lugar.
 b. Fecha de inicio y fecha de finalización.
 c. Descripción de las tareas realizadas.
 
-Educación Colocar los siguientes datos:
+Educación Colocar los siguientes datos: DONE
 a. Lugar.
 b. Año de graduación.
 c. Título obtenido.

@@ -1,0 +1,29 @@
+.QuoteLanguage {
+    background-color: #000000;
+    color: white;
+    text-align: center;
+    padding: 100px;
+
+    right: 10%;
+    bottom: 20%;
+}
+
+.languageES {
+    background-color: #0014c6;
+    color: white;
+    text-align: center;
+    padding: 1px;
+}
+.languageEN {
+    background-color: #aa0000;
+    color: white;
+    text-align: center;
+    padding: 1px;
+
+}
+.languagePT {
+    background-color: #009f6a;
+    color: white;
+    text-align: center;
+    padding: 1px;
+}
