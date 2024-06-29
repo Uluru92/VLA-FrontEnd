@@ -23,12 +23,12 @@ d. El programador debe buscar la forma de colocar una imagen del
 título obtenido.
 
 Idiomas Colocar los idiomas que maneja y el porcentaje que tiene tanto verbal
-como escrito.
+como escrito. DONE
 
-Certificaciones Colocar los siguientes datos:
+Certificaciones Colocar los siguientes datos: DONE
 a. Nombre de la certificación.
 b. Año
 c. Número o código de referencia de la certificación.
 
 Datos adicionales Este apartado es decir si maneja vehículos y los tipos de licencia, si tiene
-pasaporte y visa americana.
+pasaporte y visa americana. DONE
