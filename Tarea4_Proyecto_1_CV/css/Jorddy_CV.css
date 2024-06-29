@@ -50,3 +50,17 @@ table {
     height: 100%;
     width: 100%;
 }
+
+
+
+.btn-tran {
+    color: #000000;
+
+    transition: color 1s,
+}
+
+.btn-tran:hover {
+    color: #d0ff00;
+    background-color: #000000;
+    ;
+}
