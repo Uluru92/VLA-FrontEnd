@@ -14,24 +14,26 @@ Implementar una página web estándar con los siguientes apartados:
 Apartado Descripción
 Formulario de contacto
 (Componente)
+
 Debe solicitar los campos de
- Nombre completo
- Correo.
- Teléfono.
- Comentario.
- Botón que sea de enviar.
- Fecha de nacimiento (Date) Investigación.
+     Nombre completo
+     Correo.
+     Teléfono.
+     Comentario.
+     Botón que sea de enviar.
+     Fecha de nacimiento (Date) Investigación.
+
 Tener en consideración las siguientes validaciones:
-1. Todos los campos deben de estar llenos, caso contrario mostrar
-un mensaje que los campos deben estar llenos.
-2. Los alert están prohibidos. Debe implementar modales.
-3. En la parte de comentarios utilicemos el text área y un máximo
-de 50 caracteres. La cantidad de caracteres debe ir
-disminuyendo. (Debe mostrar un contador que disminuya en
-tiempo real)
-4. Si la diferencia entre la fecha de nacimiento y hoy es menor a 18
-años, debe mostrar un mensaje informando que no puede enviar
-la solicitud por ser menor de edad. 
+    1. Todos los campos deben de estar llenos, caso contrario mostrar
+    un mensaje que los campos deben estar llenos.
+    2. Los alert están prohibidos. Debe implementar modales.
+    3. En la parte de comentarios utilicemos el text área y un máximo
+    de 50 caracteres. La cantidad de caracteres debe ir
+    disminuyendo. (Debe mostrar un contador que disminuya en
+    tiempo real)
+    4. Si la diferencia entre la fecha de nacimiento y hoy es menor a 18
+    años, debe mostrar un mensaje informando que no puede enviar
+    la solicitud por ser menor de edad. 
 
  Debe implementar obligatoriamente el uso de Bootstrap para aspectos visuales.
  Debe implementar al meno un método en el uso de la pantalla de contáctenos.
