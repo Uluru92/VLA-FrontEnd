@@ -32,3 +32,7 @@ tiempo real)
 4. Si la diferencia entre la fecha de nacimiento y hoy es menor a 18
 años, debe mostrar un mensaje informando que no puede enviar
 la solicitud por ser menor de edad. 
+
+ Debe implementar obligatoriamente el uso de Bootstrap para aspectos visuales.
+ Debe implementar al meno un método en el uso de la pantalla de contáctenos.
+ Debe implementar el uso de carpetas según lo visto en clase: (css, js, img). 
