@@ -3,30 +3,25 @@ $(function () {
 })
 
 $(document).ready(function () {
-
-    
     var botonEnviar = document.getElementById("botonEnviarInfo");
-    var fechaSeleccionada = new Date(document.getElementById('nacimiento').value);
-    var fechaHoy = new Date();
-    var diferenciaFechas = fechaHoy.value - fechaSeleccionada.value;
-
-    document.getElementById('fechaSeleccionada').innerText = fechaSeleccionada;
-    document.getElementById('fechaHoy').innerText = fechaHoy;
-    document.getElementById('diferenciaFechas').innerText = `Edad: ${diferenciaFechas} años`
-
-
+    
     botonEnviar.addEventListener("click", function () {
+        var fechaSeleccionada = new Date(document.getElementById('nacimiento').value);
+        var fechaHoy = new Date();
+        var diferenciaFechas = fechaHoy.getFullYear() - fechaSeleccionada.getFullYear();
+
+        document.getElementById('fechaSeleccionada').innerText = fechaSeleccionada;
+        document.getElementById('fechaHoy').innerText = fechaHoy;
+        document.getElementById('diferenciaFechas').innerText = `Edad: ${diferenciaFechas} años`
 
         if (diferenciaFechas >= 18) {
             document.getElementById('diferenciaFechas').innerText = `Tienes ${diferenciaFechas} años.`;
         } else {
             document.getElementById('diferenciaFechas').innerText = `No puedes reservar, tienes ${diferenciaFechas} años, eres menor de edad.`;
         }
-    }) 
-
     })
 
-    var botonEnviar = document.getElementById("botonEnviarInfo");
+
     botonEnviar.addEventListener("click", function () {
         var nombre = document.getElementById("nombrePersona").value;
         var primerApellido = document.getElementById("primerApellidoPersona").value;
@@ -38,7 +33,7 @@ $(document).ready(function () {
 
         if (nombre == "") {
             $('#modalMensaje').modal('show');
-        }       
+        }
 
         if (primerApellido == "") {
             $('#modalMensaje').modal('show');
@@ -64,4 +59,7 @@ $(document).ready(function () {
             $('#modalMensaje').modal('show');
         }
 
-        })
+    })
+    })
+
+    
