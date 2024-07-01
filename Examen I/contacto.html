@@ -36,12 +36,17 @@
         
         <h3>Seleccione su fecha de nacimiento</h3>
         <div style="margin: 10px; padding: 10px; background-color: rgb(246, 255, 180);">
-            <input type="text" id="nacimiento" >
+            <input type="text" id="nacimiento">
+            <h6>Fecha seleccionada:</h6>
+            <p id="fechaSeleccionada"></p>
+            <h6>Fecha hoy:</h6>
+            <p id="fechaHoy"></p>
+            <h6>Edad:</h6>
+            <p id="diferenciaFechas"></p>
         </div>
-
         <h3>Comentario adicional</h3>
         <div style="margin: 10px; padding: 10px; background-color: bisque;">
-            <input  type="text" id="comentarioAdicional" placeholder="Escribe aquí">
+            <input  type="text" id="comentarioAdicional" placeholder="Motivo de viaje...">
             <p id="p"></p>
         </div>
         <br>
@@ -52,19 +57,20 @@
         </div>
     </div>
 
-    <div class="modal" tabindex="-1">
-        <div class="modal-dialog">
+    <div class="modal fade" id="modalMensaje" tabindex="-1" role="dialog" aria-labelledby="modalLabel" aria-hidden="true">
+        <div class="modal-dialog" role="document">
             <div class="modal-content">
                 <div class="modal-header">
-                    <h5 class="modal-title">Modal title</h5>
-                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                    <h5 class="modal-title" id="modalLabel">Mensaje</h5>
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                        <span aria-hidden="true">&times;</span>
+                    </button>
                 </div>
                 <div class="modal-body">
-                    <p>Modal body text goes here.</p>
+                    Se deben llenar todos los campos vacíos!
                 </div>
                 <div class="modal-footer">
-                    <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
-                    <button type="button" class="btn btn-primary">Save changes</button>
+                    <button type="button" class="btn btn-secondary" data-dismiss="modal">Cerrar</button>
                 </div>
             </div>
         </div>

@@ -2,3 +2,8 @@ p {
 background-color: rgb(255, 255, 255);
 color: rgb(0, 0, 0);
 }
+
+h3 {
+
+    background-color: rgba(165, 42, 42, 0.345);
+}
