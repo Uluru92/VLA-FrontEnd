@@ -38,3 +38,37 @@ Tener en consideración las siguientes validaciones:
  Debe implementar obligatoriamente el uso de Bootstrap para aspectos visuales.
  Debe implementar al meno un método en el uso de la pantalla de contáctenos.
  Debe implementar el uso de carpetas según lo visto en clase: (css, js, img). 
+
+    
+    botonEnviar.addEventListener("click", function () {
+        var nombre = document.getElementById("nombrePersona").value;
+        var apellido1 = document.getElementById("primerApellidoPersona").value;
+        var apellido2 = document.getElementById("segundoApellidoPersona").value;
+        var correo = document.getElementById("correoPersona").value;
+        var telefono = document.getElementById("telefonoPersona").value;
+        var nacimiento = document.getElementById("date").value;
+        var comentario = document.getElementById("comentarioAdicional").value;
+
+       
+
+        })
+
+
+})
+
+
+        if (nombre == "" || apellido1 == "" || apellido2 == "" || correo = "" || telefono == "" || nacimiento == "" || comentario == "") {
+            
+        }
+
+        else {
+            if (parseInt(edad) >= 18) {
+                document.getElementById("mensajeEdad").innerHTML = "Es una persona mayor de edad";
+            }
+            else {
+                document.getElementById("mensajeEdad").innerHTML = "Es una persona menor de edad";
+            }
+
+            document.getElementById("textoEdad").style.borderColor = "";
+        }
+    });

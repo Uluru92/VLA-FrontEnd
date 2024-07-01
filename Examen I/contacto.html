@@ -36,21 +36,39 @@
         
         <h3>Seleccione su fecha de nacimiento</h3>
         <div style="margin: 10px; padding: 10px; background-color: rgb(246, 255, 180);">
-            <input type="text" id="date">
+            <input type="text" id="nacimiento" >
         </div>
+
         <h3>Comentario adicional</h3>
         <div style="margin: 10px; padding: 10px; background-color: bisque;">
-            <input id="comentarioAdicional" class="form-control" placeholder="Comentario">
+            <input  type="text" id="comentarioAdicional" placeholder="Escribe aquí">
+            <p id="p"></p>
         </div>
         <br>
         <div style="text-align: center;">
-            <button id="botonEnviar" class="btn btn-primary">Enviar información</button>
+            <button id="botonEnviarInfo" class="btn btn-primary">
+                Enviar información
+            </button>
         </div>
     </div>
 
-    
-        
-
+    <div class="modal" tabindex="-1">
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title">Modal title</h5>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body">
+                    <p>Modal body text goes here.</p>
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+                    <button type="button" class="btn btn-primary">Save changes</button>
+                </div>
+            </div>
+        </div>
+    </div>
 
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
@@ -58,9 +76,27 @@
     <script src="./js/bootstrap-datepicker.min.js"></script>
 
     <script>
-        $('#date').datepicker()
+            function contarLetras() {
+                    let letras = document.getElementById("comentarioAdicional").value;
+                    let numeroLetras = letras.length;
+                    if (numeroLetras <= 500) {
+                    document.getElementById('comentarioAdicional').addEventListener('input', contarLetras);
+                    document.getElementById('p').innerText = `Letras: ${numeroLetras} /500`;
+                }
+                else {
+                    document.getElementById('p').innerText = `Has superado el número másximo de letas:${numeroLetras} /500 `;
+                }
+                }
+                window.onload = function () {
+                    let letras = document.getElementById("comentarioAdicional").value;
+                    let numeroLetras = letras.length;
+                    document.getElementById('comentarioAdicional').addEventListener('input', contarLetras);
+                };
     </script>
-    
+
+    <script>
+        $('#nacimiento').datepicker()
+    </script>
 
 </body>
 </html>
