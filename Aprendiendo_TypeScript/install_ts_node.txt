@@ -1,0 +1,3 @@
+tsc --init
+ts-node
+npm install -g ts-node typescript
