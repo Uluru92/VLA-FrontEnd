@@ -1,3 +1,4 @@
+/*Resuelto por el profe */
 class PersonaCarro {
     nombre: string = "";
     cedula: number = 0;
