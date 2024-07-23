@@ -1,0 +1,28 @@
+{
+
+    "PersonasRegistrada" : 
+
+    [
+
+        {
+            "userName" : "admin",
+            "passWord" : "123",
+            "nombre" : "Persona Administrativa 1",
+            "correo" : "administracionVLA@gmail.com"
+        },
+        {
+            "userName": "adolfo2192",
+            "passWord": "MiGrupoFavorito",
+            "nombre": "Adolfo Vargas Sandoval",
+            "correo": "adolfo2192@gmail.com"
+        },
+        {
+            "userName": "sophia0324",
+            "passWord": "HolaMundo123*",
+            "nombre": "Sophia Vargas Obando",
+            "correo": "sophia0324@gmail.com"
+        }
+
+    ]
+
+}
