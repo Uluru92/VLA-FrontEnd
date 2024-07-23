@@ -1,4 +1,5 @@
 const express = require("express")
+const RouterPersonas = require ("./Routes/PersonasRoute")
 
 const app = express();
 const port = 3015;
@@ -11,6 +12,8 @@ app.use((req, res, next) => {
 });
 
 app.use(express.json())
+
+app.use("/api/route", RouterPersonas)
 
 app.listen(port, () => {
     console.log("Se ha refrescado el sitio en el puerto:", port)
