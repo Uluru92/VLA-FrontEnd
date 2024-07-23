@@ -1,0 +1,11 @@
+{
+  "name": "api_general",
+  "version": "1.0.0",
+  "description": "Esto es una prueba de api",
+  "main": "3030",
+  "scripts": {
+    "test": "rpm run dev"
+  },
+  "author": "",
+  "license": "ISC"
+}
