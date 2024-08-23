@@ -1,0 +1,2 @@
+Explicar un poco más sobre la buena práctica al crear una API:
+¿Que es HATEOS exactamente?
