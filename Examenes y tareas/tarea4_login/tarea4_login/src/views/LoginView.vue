@@ -13,14 +13,62 @@ es permitido o no.
 -->
 
 <template>
-    <h1>HolaEstoy en Login</h1>
+    <div class="container">
+        <div class="general">
+        <h1>LOGIN:</h1>
+        <input class="boton" v-model="usuario" placeholder="Digite su usuario">
+        <input class="boton" v-model="contraseña" placeholder="Digite su contraseña">
+        <button class="btn btn-danger" @click="ValidarUsuario">Validar</button>
+        </div>
+        <br>
+        <br>
+        <br>
+        <h6 class="firma">Realizado por - Jorddy Castro Araya</h6>
+    </div>
 </template>
 
 <script lang='ts'>
     import { defineComponent } from 'vue';
 
-    export default defineComponent({
-        
-
-    })
+export default defineComponent({
+    data() {
+            return { 
+                usuario: '' as string,
+                contraseña: '' as string,
+            };
+        },
+        methods: {
+            ValidarUsuario()
+            {
+                if (this.usuario === 'admin' && this.contraseña === '123*') {
+                alert('El usuario es permitido')
+                }
+                else
+                alert('El usuario no es permitido')
+            }
+        }
+})
 </script>
+
+<style>
+.general
+{
+    margin: 10px;
+    padding: 20px;
+    background-color: rgb(118, 200, 200);
+    color: darkgreen;
+}
+.boton{
+    margin: 5px;
+    background-color: rgb(255, 220, 196);
+    color: black;
+}
+.firma{
+  color: black;
+  transition: color 0.3s;
+  text-align: end;
+}
+.firma:hover{
+ color: crimson;
+}
+</style>

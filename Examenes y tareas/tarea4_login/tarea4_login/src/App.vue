@@ -1,11 +1,8 @@
 <template>
   <nav>
     <router-link to="/">General</router-link> |
-    <router-link to="/formularios">Formularios</router-link>|
-    <router-link to="/emits">Emits</router-link> |
-    <router-link to="/almacenamiento">Almacenamiento</router-link> |
     <router-link to="/login">Login</router-link> |
-    <router-link to="/directivas">Directivas</router-link> |
+
   </nav>
   <router-view/>
 </template>
