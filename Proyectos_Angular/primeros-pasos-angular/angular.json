@@ -3,11 +3,18 @@
   "version": 1,
   "newProjectRoot": "projects",
   "projects": {
-    "aprendiendo-angular-2": {
+    "primeros-pasos-angular": {
       "projectType": "application",
       "schematics": {
         "@schematics/angular:component": {
-          "style": "scss"
+          "style": "scss",
+          "standalone": false
+        },
+        "@schematics/angular:directive": {
+          "standalone": false
+        },
+        "@schematics/angular:pipe": {
+          "standalone": false
         }
       },
       "root": "",
@@ -17,7 +24,7 @@
         "build": {
           "builder": "@angular-devkit/build-angular:application",
           "options": {
-            "outputPath": "dist/aprendiendo-angular-2",
+            "outputPath": "dist/primeros-pasos-angular",
             "index": "src/index.html",
             "browser": "src/main.ts",
             "polyfills": [
@@ -69,10 +76,10 @@
           "builder": "@angular-devkit/build-angular:dev-server",
           "configurations": {
             "production": {
-              "buildTarget": "aprendiendo-angular-2:build:production"
+              "buildTarget": "primeros-pasos-angular:build:production"
             },
             "development": {
-              "buildTarget": "aprendiendo-angular-2:build:development"
+              "buildTarget": "primeros-pasos-angular:build:development"
             }
           },
           "defaultConfiguration": "development"
