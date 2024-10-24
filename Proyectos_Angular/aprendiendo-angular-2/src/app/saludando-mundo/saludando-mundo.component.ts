@@ -1,7 +1,7 @@
 import { Component } from '@angular/core';
 
 @Component({
-  selector: 'saludando-mundo',
+  selector: 'saludando-mundo-jorddy',
   standalone: true,
   imports: [],
   templateUrl: './saludando-mundo.component.html',
