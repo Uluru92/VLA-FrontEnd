@@ -7,6 +7,9 @@ import { Component } from '@angular/core';
   templateUrl: './saludando-mundo.component.html',
   styleUrl: './saludando-mundo.component.scss'
 })
-export class SaludandoMundoComponent {
+export class SaludandoMundoComponent
+{
+
+  // acá se programan todas las variables y métodos de TS
 
 }
