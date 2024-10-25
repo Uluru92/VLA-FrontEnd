@@ -1,4 +1,4 @@
-import { Component, Input } from '@angular/core';
+import { Component} from '@angular/core';
 
 @Component({
   selector: 'app-primer-formulario-jorddy',
@@ -7,5 +7,11 @@ import { Component, Input } from '@angular/core';
 })
 export class PrimerFormularioComponent
 {
-  @Input() nombrePersona: string = "";
+  nombrePersona: string = "";
+  apellidoPersona: string = "";
+  edadPersona: string = "";
+
+  ValidarCampos(): void{
+    alert(this.nombrePersona)
+  }
 }

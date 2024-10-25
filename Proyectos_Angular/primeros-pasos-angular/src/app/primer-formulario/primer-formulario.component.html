@@ -1,6 +1,7 @@
-<p>acá inicia el componente de PRIMER FORMULARIO</p>
-
 <div class="container">
-    <h3>Digite el nombre: {{nombrePersona}}</h3>
+    <h1>Mi primer formulario</h1>
+    <input type="text" [(ngModel)] = "nombrePersona" class="form-control" placeholder="Digite el nombre">
+    <input type="text" [(ngModel)] = "apellidoPersona" class="form-control" placeholder="Digite el apellido">
+    <input type="text" [(ngModel)] = "edadPersona" class="form-control" placeholder="Digite la edad">
+    <button class="btn btn-primary" (click)="ValidarCampos()">Validad campos</button>
 </div>
-<p>acá termina el componente de PRIMER FORMULARIO</p>
