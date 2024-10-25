@@ -12,6 +12,7 @@ import { PrimerFormularioComponent } from './primer-formulario/primer-formulario
   ],
   imports: [
     BrowserModule,
+    NgModule,
     AppRoutingModule
   ],
   providers: [
