@@ -4,15 +4,16 @@ import { BrowserModule, provideClientHydration } from '@angular/platform-browser
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
 import { PrimerFormularioComponent } from './primer-formulario/primer-formulario.component';
+import { InformacionPersonalComponent } from './informacion-personal/informacion-personal.component';
 
 @NgModule({
   declarations: [
     AppComponent,
-    PrimerFormularioComponent
+    PrimerFormularioComponent,
+    InformacionPersonalComponent
   ],
   imports: [
     BrowserModule,
-    NgModule,
     AppRoutingModule
   ],
   providers: [
