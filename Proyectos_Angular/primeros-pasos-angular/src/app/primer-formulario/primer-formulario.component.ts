@@ -10,9 +10,11 @@ export class PrimerFormularioComponent
   nombrePersona: string = "";
   apellidoPersona: string = "";
   edadPersona: string = "";
+  mensajeErrorEdad: string = "";
   mostrarMensajeErrorNombre: boolean = false;
   mostrarMensajeErrorApellido: boolean = false;
   mostrarMensajeErrorEdad: boolean = false;
+
 
   ValidarCampos(): void{
     if (this.nombrePersona == "")
@@ -25,9 +27,23 @@ export class PrimerFormularioComponent
     else
       this.mostrarMensajeErrorApellido = false;
 
-    if (this.edadPersona == "")
+    if (this.edadPersona == "") {
       this.mostrarMensajeErrorEdad = true;
+      this.mensajeErrorEdad = "El campo de edad de la persona es requerido" 
+    }
     else
-      this.mostrarMensajeErrorEdad = false;
+    {
+      const edadValidar = Number(this.edadPersona);
+      if (isNaN(edadValidar)) {
+        this.mensajeErrorEdad = "El campo de edad debe ser solo números";
+      }
+      else {
+        if(edadValidar <= 17) {
+          this.mensajeErrorEdad = "Solo se pueden registrar personas mayores de edad"
+        } else {
+          this.mostrarMensajeErrorEdad = false;
+        }
+      }
+    }
   }
 }
