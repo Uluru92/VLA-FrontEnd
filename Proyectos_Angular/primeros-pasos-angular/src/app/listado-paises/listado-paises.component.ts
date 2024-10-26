@@ -5,7 +5,8 @@ import { Component } from '@angular/core';
   templateUrl: './listado-paises.component.html',
   styleUrl: './listado-paises.component.scss'
 })
-export class ListadoPaisesComponent {
+export class ListadoPaisesComponent
+{
   paises: string[] = [
     "Argentina",
     "Brasil",
