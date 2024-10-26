@@ -5,8 +5,7 @@ import { Component } from '@angular/core';
   templateUrl: './primer-formulario.component.html',
   styleUrl: './primer-formulario.component.scss'
 })
-export class PrimerFormularioComponent
-{
+export class PrimerFormularioComponent {
   nombrePersona: string = "";
   apellidoPersona: string = "";
   edadPersona: string = "";
@@ -16,7 +15,7 @@ export class PrimerFormularioComponent
   mostrarMensajeErrorEdad: boolean = false;
 
 
-  ValidarCampos(): void{
+  ValidarCampos(): void {
     if (this.nombrePersona == "")
       this.mostrarMensajeErrorNombre = true;
     else
@@ -29,16 +28,16 @@ export class PrimerFormularioComponent
 
     if (this.edadPersona == "") {
       this.mostrarMensajeErrorEdad = true;
-      this.mensajeErrorEdad = "El campo de edad de la persona es requerido" 
+      this.mensajeErrorEdad = "El campo de edad de la persona es requerido"
     }
-    else
-    {
+    else {
+      this.mostrarMensajeErrorEdad = true;
       const edadValidar = Number(this.edadPersona);
       if (isNaN(edadValidar)) {
         this.mensajeErrorEdad = "El campo de edad debe ser solo números";
       }
       else {
-        if(edadValidar <= 17) {
+        if (edadValidar <= 17) {
           this.mensajeErrorEdad = "Solo se pueden registrar personas mayores de edad"
         } else {
           this.mostrarMensajeErrorEdad = false;
