@@ -6,12 +6,14 @@ import { AppComponent } from './app.component';
 import { PrimerFormularioComponent } from './primer-formulario/primer-formulario.component';
 import { InformacionPersonalComponent } from './informacion-personal/informacion-personal.component';
 import { FormsModule } from '@angular/forms';
+import { ListadoPaisesComponent } from './listado-paises/listado-paises.component';
 
 @NgModule({
   declarations: [
     AppComponent,
     PrimerFormularioComponent,
-    InformacionPersonalComponent
+    InformacionPersonalComponent,
+    ListadoPaisesComponent
   ],
   imports: [
     BrowserModule,
