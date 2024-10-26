@@ -2,15 +2,15 @@
     <h1>Mi primer formulario</h1>
     <input type="text" [(ngModel)] = "nombrePersona" class="form-control" placeholder="Digite el nombre">
     <div class="d-flex justify-content-end">
-        <span *ngif="mostrarMensajeError" style="color: red;">Campo del nombre de la persona requerido</span>
+        <span *ngif="mostrarMensajeErrorNombre" style="color: red;">Campo del nombre de la persona requerido</span>
     </div>
     <input type="text" [(ngModel)] = "apellidoPersona" class="form-control" placeholder="Digite el apellido">
     <div class="d-flex justify-content-end">
-        <span style="color: red;">Campo del apellido de la persona requerido</span>
+        <span *ngif="mostrarMensajeErrorApellido" style="color: red;">Campo del apellido de la persona requerido</span>
     </div>
     <input type="text" [(ngModel)] = "edadPersona" class="form-control" placeholder="Digite la edad">
     <div class="d-flex justify-content-end">
-        <span style="color: red;">Campo de la edad de la persona requerido</span>
+        <span *ngif="mostrarMensajeErrorEdad" style="color: red;">Campo de la edad de la persona requerido</span>
     </div>
     <button class="btn btn-primary" (click)="ValidarCampos()">Validad campos</button>
 </div>
