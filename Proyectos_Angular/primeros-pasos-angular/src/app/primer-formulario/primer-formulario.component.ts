@@ -1,4 +1,4 @@
-import { Component} from '@angular/core';
+import { Component } from '@angular/core';
 
 @Component({
   selector: 'app-primer-formulario-jorddy',
@@ -14,9 +14,7 @@ export class PrimerFormularioComponent
   mostrarMensajeErrorApellido: boolean = false;
   mostrarMensajeErrorEdad: boolean = false;
 
-
   ValidarCampos(): void{
-    
     if (this.nombrePersona == "")
       this.mostrarMensajeErrorNombre = true;
     else
