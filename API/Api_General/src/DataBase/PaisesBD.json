@@ -1,0 +1,20 @@
+{
+    "PaísesRegistrados": [
+        {
+            "idPaís":"506",
+            "nombrePaís": "Costa Rica"
+        },
+        {
+            "idPaís": "507",
+            "nombrePaís": "Panamá"
+        },
+        {
+            "idPaís": "57",
+            "nombrePaís": "Colombia"
+        },
+        {
+            "idPaís": "503",
+            "nombrePaís": ""
+        }
+    ]
+}
