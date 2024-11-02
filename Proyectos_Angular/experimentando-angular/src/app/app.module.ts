@@ -7,6 +7,7 @@ import { ConsumoApiComponent } from './consumo-api/consumo-api.component';
 import { DirectivasComponent } from './directivas/directivas.component';
 import { FormularioUnoComponent } from './formulario-uno/formulario-uno.component';
 import { BrowserModule, provideClientHydration } from '@angular/platform-browser';
+import { HttpClientModule } from '@angular/common/http';
 
 @NgModule({
   declarations: [
@@ -19,8 +20,8 @@ import { BrowserModule, provideClientHydration } from '@angular/platform-browser
   imports: [
     BrowserModule,
     AppRoutingModule,
-    FormsModule
-
+    FormsModule,
+    HttpClientModule
   ],
   providers: [
     provideClientHydration()

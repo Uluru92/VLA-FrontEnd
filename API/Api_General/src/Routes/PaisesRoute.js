@@ -3,6 +3,6 @@ const router = express.Router();
 const controladorPaises = require("../Controllers/PaisesController");
 
 router
-    .get("/ObtenerTodososPaises", controladorPaises.ObtenerTodosLosPaises)
+    .get("/ObtenerTodoslosPaises", controladorPaises.ObtenerTodosLosPaises)
 
 module.exports = router;
