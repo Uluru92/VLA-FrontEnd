@@ -8,9 +8,9 @@
                 <th>Nombre de País</th>
         </thead>
         <tbody>
-            <tr>
-                <td>506</td>
-                <td>Costa Rica</td>
+            <tr *ngFor ="let pais of vectorPaises">
+                <td>{{pais.idPais}}</td>
+                <td>{{pais.nombrePais}}</td>
             </tr>
         </tbody>
     </table>
