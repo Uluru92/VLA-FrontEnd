@@ -8,6 +8,7 @@ import { DirectivasComponent } from './directivas/directivas.component';
 import { FormularioUnoComponent } from './formulario-uno/formulario-uno.component';
 import { BrowserModule, provideClientHydration } from '@angular/platform-browser';
 import { HttpClientModule } from '@angular/common/http';
+//import { NgModule } from '@ng-bootstrap/ng-bootstrap'
 
 @NgModule({
   declarations: [
@@ -21,7 +22,8 @@ import { HttpClientModule } from '@angular/common/http';
     BrowserModule,
     AppRoutingModule,
     FormsModule,
-    HttpClientModule
+    HttpClientModule,
+  //  NgModule
   ],
   providers: [],
   bootstrap: [AppComponent]

@@ -1,0 +1,15 @@
+notas angular
+
+
+npm init   === iniciamos proyecto y creamos el archivo package.json
+npm run dev === inicializamos la API
+ng serve  === inicializamos el localhost
+ng version === revisamos la version
+node -v   === revisamos version de node
+npm install === instalamos node_modules
+npm update  === actualizamos todas las dependencias
+npm install bootstrap === instalamos bootstrap principal
+npm install @ng-bootstrap/ng-bootstrap@17.0.1 --legacy-peer-deps === instalamos boostra tropicalizado segun version
+ng generate service consumo-api-pais ===
+ng generate component General       ===  generamos un componente
+npm i @angular/core === instala la ultima version oficial
