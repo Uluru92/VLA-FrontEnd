@@ -12,4 +12,8 @@ npm install bootstrap === instalamos bootstrap principal
 npm install @ng-bootstrap/ng-bootstrap@17.0.1 --legacy-peer-deps === instalamos boostra tropicalizado segun version
 ng generate service consumo-api-pais ===
 ng generate component General       ===  generamos un componente
-npm i @angular/core === instala la ultima version oficial
+npm i @angular/core === instala ultima version "@angular/core": "^18.2.11" la version mas importante a actualizadar
+npm i @ng-bootstrap/ng-bootstrap === instala la ultima version tropicalizada
+
+
+pagina documentacion ng bootstrap: ng-bootstrap.github.it/#/home
