@@ -16,6 +16,11 @@ npm i @angular/core === instala ultima version "@angular/core": "^18.2.11" la ve
 npm i @ng-bootstrap/ng-bootstrap === instala la ultima version tropicalizada
 
 
-pagina documentacion ng bootstrap: ng-bootstrap.github.it/#/home
+pagina documentacion ng bootstrap: 
+-ng-bootstrap.github.it/#/home
 
 pagina para bugs: stackoverflow.com
+pagina de recursos botones: 
+-bootstrap
+-material framework design
+-tailwindcss.com
