@@ -23,7 +23,8 @@ export class FormularioUnoComponent implements OnInit
   mensajeNombrePersona : string = "El campo de nombre es requerido";
   mensajeCorreoPersona : string = "El campo de correo es requerido";
   mensajeUserNamePersona : string = "El campo de nombre de usuario es requerido";
-  mensajePasswordPersona : string = "El campo de contrasena es requerido";
+  mensajePasswordPersona: string = "El campo de contrasena es requerido";
+  habilitarBotonEditar: boolean = false;
 
   @ViewChild('ContenedorRespuesta',{ static: true}) modalRespuesta :any;
 
