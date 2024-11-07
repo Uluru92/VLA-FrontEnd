@@ -138,7 +138,7 @@ export class FormularioUnoComponent implements OnInit
 
   EditarPersona(): void
   {
-    
+    alert("Hola Estoy desde persona!")
   }
 
   ReestablecerConfiguracion(): void{
