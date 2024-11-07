@@ -2,6 +2,7 @@ import { Injectable } from '@angular/core';
 import { HttpClient } from '@angular/common/http';
 import { catchError, map, Observable, throwError } from 'rxjs';
 import { Persona } from '../../models/Persona';
+import { PersonaEliminar } from '../../models/PersonaEliminar';
 
 @Injectable({
   providedIn: 'root'
@@ -28,5 +29,9 @@ export class PersonasService
   GuardarNuevaPersona(persona: Persona): Observable<any>
   {
     return this.http.post<any>(`${this.apiPersona}/RegistrarNuevaPersona`,persona)
+  }
+
+  EliminarPersona(persona: PersonaEliminar): Observable<any> {
+    return this.http.post<any>(`${this.apiPersona}/EliminarPersona`, persona)
   }
 }
