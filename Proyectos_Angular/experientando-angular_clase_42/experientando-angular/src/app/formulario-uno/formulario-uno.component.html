@@ -21,7 +21,7 @@
     </div>
     <br>
     <button *ngIf="!habilitarBotonEditar" (click)="AbrirModal(ContenedorGuardarPersona)" class="btn btn-success">Guardar</button>
-    <button *ngIf="habilitarBotonEditar" class="btn btn-warning">Editar</button>
+    <button *ngIf="habilitarBotonEditar" (click)="AbrirModal(ContenedorGuardarPersona)" class="btn btn-warning">Editar</button>
     <button (click)="ReestablecerConfiguracion()" class="btn btn-primary">Refrescar</button>
     <table class="table">
         <thead>
@@ -41,7 +41,7 @@
                 <td>{{per.passWord}}</td>
                 <td>
                     <button (click)="EliminarPersona(i)" class="btn btn-danger">E</button>
-                    <button (click)="EditarPersona(i)" class="btn btn-warning">M</button>
+                    <button (click)="BotonEditarPersona(i)" class="btn btn-warning">M</button>
                 </td>
             </tr>
         </tbody>
@@ -59,7 +59,9 @@
         </div>
         <div class="modal-footer">
             <button class="btn btn-danger" (click)="modal.dismiss()">Cancelar</button>
-            <button class="btn btn-success" (click)="GuardarPersona()" >Aceptar</button>
+            <button *ngIf="habilitarBotonEditar==false" class="btn btn-success" (click)="GuardarPersona()" >Aceptar</button>
+            <button *ngIf="habilitarBotonEditar" class="btn btn-success" (click)="EditarPersona()" >Aceptar</button>
+            
         </div>
     </ng-template> 
 

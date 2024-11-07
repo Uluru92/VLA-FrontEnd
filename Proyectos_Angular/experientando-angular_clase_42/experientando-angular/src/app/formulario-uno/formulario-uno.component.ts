@@ -125,15 +125,20 @@ export class FormularioUnoComponent implements OnInit
     )      
   }
 
-  EditarPersona(indice: number): void{
+  BotonEditarPersona(indice: number): void{
     const personaEnPosicion = this.personas[indice];
 
     this.nombrePersona = personaEnPosicion.nombre;
     this.userNamePersona = personaEnPosicion.userName;
     this.correoPersona = personaEnPosicion.correo;
     this.passWordPersona = personaEnPosicion.passWord;
-    
+
     this.habilitarBotonEditar = true;
+  }
+
+  EditarPersona(): void
+  {
+    
   }
 
   ReestablecerConfiguracion(): void{
