@@ -19,10 +19,22 @@
       "correo": "sophia0324@gmail.com"
     },
     {
-      "nombre": "Jor",
-      "correo": "jor.gmail",
-      "userName": "uluru",
-      "passWord": "hello"
+      "nombre": "Fabian",
+      "correo": "fab@gmail.com",
+      "userName": "Uluru",
+      "passWord": "Tree0294"
+    },
+    {
+      "nombre": "Fabian",
+      "correo": "Fab_123@gmail.com",
+      "userName": "Urulo92",
+      "passWord": "asd123"
+    },
+    {
+      "nombre": "Carlos",
+      "correo": "Carlos",
+      "userName": "Carlos",
+      "passWord": "Carlos"
     }
   ]
 }

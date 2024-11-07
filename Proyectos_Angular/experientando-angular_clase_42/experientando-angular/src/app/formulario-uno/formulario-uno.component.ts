@@ -66,7 +66,13 @@ export class FormularioUnoComponent implements OnInit
 
           if(this.codigoRespuestaApi==0)
           {
+            this.nombrePersona = "";
+            this.correoPersona = "";
+            this.userNamePersona = "";
+            this.passWordPersona = "";
             this.VerTodasLasPersonas()   
+            this.modalService.dismissAll(this.modalRespuesta);
+
           }        
           this.modalService.open(this.modalRespuesta);
         },
@@ -97,7 +103,7 @@ export class FormularioUnoComponent implements OnInit
 
   EliminarPersona(indice : number):void
   {
-    let personaEnPosicion = this.personas[indice];
+    const personaEnPosicion = this.personas[indice];
     const personaEliminar = new PersonaEliminar(personaEnPosicion.userName);
 
     this.personasServices.EliminarPersona(personaEliminar).subscribe(
@@ -115,5 +121,15 @@ export class FormularioUnoComponent implements OnInit
         console.log("Hubo un error al guardar persona", error);
       }
     )      
+  }
+
+  EditarPersona(indice: number): void{
+    const personaEnPosicion = this.personas[indice];
+
+    this.nombrePersona = personaEnPosicion.nombre;
+    this.userNamePersona = personaEnPosicion.userName;
+    this.correoPersona = personaEnPosicion.correo;
+    this.passWordPersona = personaEnPosicion.passWord;
+
   }
 }

@@ -21,6 +21,7 @@
     </div>
     <br>
     <button (click)="AbrirModal(ContenedorGuardarPersona)" class="btn btn-success">Guardar</button>
+    <button (click)="AbrirModal(ContenedorGuardarPersona)" class="btn btn-success">Editar</button>
     <table class="table">
         <thead>
             <tr>
@@ -39,7 +40,7 @@
                 <td>{{per.passWord}}</td>
                 <td>
                     <button (click)="EliminarPersona(i)" class="btn btn-danger">E</button>
-                    <button class="btn btn-warning">M</button>
+                    <button (click)="EditarPersona(i)" class="btn btn-warning">M</button>
                 </td>
             </tr>
         </tbody>
