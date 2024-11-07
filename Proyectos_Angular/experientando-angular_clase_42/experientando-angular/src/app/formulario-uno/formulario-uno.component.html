@@ -1,0 +1,73 @@
+<div class="container">
+    <h1>Mantenimiento de usuarios</h1>
+    <input type="text" class="form-control" [(ngModel)]="nombrePersona" placeholder="Nombre de la persona" >
+    <div class="d-flex justify-content-end">
+        <span *ngIf="mostrarMensajeError" style="color: red;">{{mensajeNombrePersona}}</span>
+    </div>
+    <br>
+    <input type="text" class="form-control" [(ngModel)]="correoPersona" placeholder="Correo de la persona">
+    <div class="d-flex justify-content-end">
+        <span *ngIf="mostrarMensajeError" style="color: red;">{{mensajeCorreoPersona}}</span>
+    </div>
+    <br>
+    <input type="text" class="form-control" [(ngModel)]="userNamePersona" placeholder="User Name">
+    <div class="d-flex justify-content-end">
+        <span *ngIf="mostrarMensajeError" style="color: red;">{{mensajeUserNamePersona}}</span>
+    </div>
+    <br>
+    <input type="password" class="form-control" [(ngModel)]="passWordPersona" placeholder="Password">
+    <div class="d-flex justify-content-end">
+        <span *ngIf="mostrarMensajeError" style="color: red;">{{mensajePasswordPersona}}</span>
+    </div>
+    <br>
+    <button (click)="AbrirModal(ContenedorGuardarPersona)" class="btn btn-success">Guardar</button>
+    <table class="table">
+        <thead>
+            <tr>
+                <th>Nombre</th>
+                <th>Correo</th>
+                <th>User Name</th>
+                <th>Password</th>
+            </tr>
+        </thead>
+        <tbody>
+            <!--Mapeo del vector que leemos en el ts-->
+            <tr *ngFor="let per of personas">
+                <td>{{per.nombre}}</td>
+                <td>{{per.correo}}</td>
+                <td>{{per.userName}}</td>
+                <td>{{per.passWord}}</td>
+            </tr>
+        </tbody>
+    </table>
+
+
+    <ng-template #ContenedorGuardarPersona let-modal>
+        <div class="modal-header">
+            <h4 class="modal-title">Registrar Persona</h4>            
+        </div>
+        <div class="modal-body">
+            <p>Nombre: {{nombrePersona}}</p>
+            <p>Correo: {{correoPersona}}</p>
+            <p>UserName: {{userNamePersona}}</p>
+        </div>
+        <div class="modal-footer">
+            <button class="btn btn-danger" (click)="modal.dismiss()">Cancelar</button>
+            <button class="btn btn-success" (click)="GuardarPersona()" >Aceptar</button>
+        </div>
+    </ng-template> 
+
+
+    <ng-template #ContenedorRespuesta let-modal>
+        <div class="modal-header">
+            <h4 class="modal-title">Respuesta del Servicio</h4>            
+        </div>
+        <div class="modal-body">
+            <p>{{codigoRespuestaApi}}</p>
+            <p>{{descripcionRespuestaApi}}</p>
+        </div>
+        <div class="modal-footer">
+            <button class="btn btn-danger" (click)="modal.dismiss()">Cerrar</button>
+        </div>
+    </ng-template>
+</div>

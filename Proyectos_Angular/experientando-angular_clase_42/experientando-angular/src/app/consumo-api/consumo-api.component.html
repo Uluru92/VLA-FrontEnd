@@ -1,0 +1,16 @@
+<div class="container">
+    <h1>Estos son los paises registrados en nuestra base de datos</h1>
+    <table class="table">
+        <thead>
+            <th>Cod. Pais</th>
+            <th>Nombre de Pais</th>
+        </thead>
+        <tbody>
+            <tr *ngFor="let pais of vectorPaises">
+                <td>{{pais.idPais}}</td>
+                <td>{{pais.nombrePais}}</td>
+            </tr>
+        </tbody>
+
+    </table>
+</div>
