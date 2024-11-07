@@ -17,3 +17,5 @@ npm i @ng-bootstrap/ng-bootstrap === instala la ultima version tropicalizada
 
 
 pagina documentacion ng bootstrap: ng-bootstrap.github.it/#/home
+
+pagina para bugs: stackoverflow.com
