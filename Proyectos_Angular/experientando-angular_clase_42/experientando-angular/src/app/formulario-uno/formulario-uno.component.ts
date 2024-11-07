@@ -1,5 +1,6 @@
 import { Component, OnInit, ViewChild } from '@angular/core';
 import { Persona } from '../models/Persona';
+import { PersonaEliminar } from '../models/PersonaEliminar';
 import { PersonasService } from '../services/persona/personas-service.service';
 import { NgbModal } from '@ng-bootstrap/ng-bootstrap';
 
@@ -92,6 +93,12 @@ export class FormularioUnoComponent implements OnInit
     return true;
 
     return false;
+  }
+
+  EliminarPersona(indice : number):void
+  {
+    let personaEnPosicion = this.personas[indice];
+    const personaEliminar = new PersonaEliminar(personaEnPosicion.userName);
   }
 
 }

@@ -32,13 +32,13 @@
         </thead>
         <tbody>
             <!--Mapeo del vector que leemos en el ts-->
-            <tr *ngFor="let per of personas">
+            <tr *ngFor="let per of personas; let i = index">
                 <td>{{per.nombre}}</td>
                 <td>{{per.correo}}</td>
                 <td>{{per.userName}}</td>
                 <td>{{per.passWord}}</td>
                 <td>
-                    <button class="btn btn-danger">E</button>
+                    <button (click)="EliminarPersona(i)" class="btn btn-danger">E</button>
                     <button class="btn btn-warning">M</button>
                 </td>
             </tr>
