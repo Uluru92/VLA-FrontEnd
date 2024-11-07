@@ -25,6 +25,7 @@ export class FormularioUnoComponent implements OnInit
   mensajeUserNamePersona : string = "El campo de nombre de usuario es requerido";
   mensajePasswordPersona: string = "El campo de contrasena es requerido";
   habilitarBotonEditar: boolean = false;
+  RefrescarBoton: boolean = false;
 
   @ViewChild('ContenedorRespuesta',{ static: true}) modalRespuesta :any;
 
@@ -131,6 +132,17 @@ export class FormularioUnoComponent implements OnInit
     this.userNamePersona = personaEnPosicion.userName;
     this.correoPersona = personaEnPosicion.correo;
     this.passWordPersona = personaEnPosicion.passWord;
+    
+    this.habilitarBotonEditar = true;
+  }
+
+  ReestablecerConfiguracion(): void{
+    this.nombrePersona = "";
+    this.userNamePersona = "";
+    this.correoPersona = "";
+    this.passWordPersona = "";
+
+    this.habilitarBotonEditar = false;
 
   }
 }

@@ -1,6 +1,6 @@
 <div class="container">
     <h1>Mantenimiento de usuarios</h1>
-    <input type="text" class="form-control" [(ngModel)]="nombrePersona" placeholder="Nombre de la persona" >
+    <input [attr.disabled]="habilitarBotonEditar ? true: null" type="text" class="form-control" [(ngModel)]="nombrePersona" placeholder="Nombre de la persona" >
     <div class="d-flex justify-content-end">
         <span *ngIf="mostrarMensajeError" style="color: red;">{{mensajeNombrePersona}}</span>
     </div>
@@ -20,8 +20,9 @@
         <span *ngIf="mostrarMensajeError" style="color: red;">{{mensajePasswordPersona}}</span>
     </div>
     <br>
-    <button (click)="AbrirModal(ContenedorGuardarPersona)" class="btn btn-success">Guardar</button>
-    <button (click)="AbrirModal(ContenedorGuardarPersona)" class="btn btn-success">Editar</button>
+    <button *ngIf="!habilitarBotonEditar" (click)="AbrirModal(ContenedorGuardarPersona)" class="btn btn-success">Guardar</button>
+    <button *ngIf="habilitarBotonEditar" class="btn btn-warning">Editar</button>
+    <button (click)="ReestablecerConfiguracion()" class="btn btn-primary">Refrescar</button>
     <table class="table">
         <thead>
             <tr>
