@@ -99,6 +99,22 @@ export class FormularioUnoComponent implements OnInit
   {
     let personaEnPosicion = this.personas[indice];
     const personaEliminar = new PersonaEliminar(personaEnPosicion.userName);
+
+    this.personasServices.EliminarPersona(personaEliminar).subscribe(
+      data => {
+        this.codigoRespuestaApi = data.Codigo;
+        this.descripcionRespuestaApi = data.Descripcion;
+
+        if (this.codigoRespuestaApi == 0)
+        {
+          this.VerTodasLasPersonas()
+        }
+        this.modalService.open(this.modalRespuesta);
+      },
+      error => {
+        console.log("Hubo un error al guardar persona", error);
+      }
+    )      
   }
 
 }
