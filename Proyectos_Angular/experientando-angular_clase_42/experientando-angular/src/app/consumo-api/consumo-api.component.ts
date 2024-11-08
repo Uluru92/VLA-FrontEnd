@@ -10,10 +10,7 @@ import { Pais } from '../models/Pais';
 })
 export class ConsumoApiComponent implements OnInit
 {
-  searchTerm: string = "";
-  filteredData: any[] = [];
-
-
+  palabraClave: string = "";
 
   vectorPaises : Pais[] = [];
 

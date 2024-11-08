@@ -1,6 +1,11 @@
 <div class="container" style="background-color: rgb(133, 255, 237); padding: 50px;">
     
-    <h6 style="text-align: end;">BUSCAR <input type="text" placeholder="Palabra clave"></h6>
+    <h6 style="text-align: end;">BUSCAR 
+    <input 
+    [(ngModel)]="palabraClave" 
+    type="text" 
+    placeholder="Palabra clave">
+    </h6>
 
     <h1 class="form-control" style="text-align: center; background-color: yellow;">GUÍA TURÍSTICA</h1>
     <table class="table" >
