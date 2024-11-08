@@ -4,11 +4,15 @@
         <thead>
             <th>Cod. Pais</th>
             <th>Nombre de Pais</th>
+            <th>Capital</th>
+            <th>Moneda</th>
         </thead>
         <tbody>
             <tr *ngFor="let pais of vectorPaises">
                 <td>{{pais.idPais}}</td>
                 <td>{{pais.nombrePais}}</td>
+                <td>{{pais.capital}}</td>
+                <td>{{pais.moneda}}</td>
             </tr>
         </tbody>
 
