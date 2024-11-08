@@ -1,11 +1,12 @@
 <div class="container">
-    <h1>Estos son los paises registrados en nuestra base de datos</h1>
+    <h1 class="form-control">GUÍA TURÍSTICA</h1>
     <table class="table">
         <thead>
             <th>Cod. Pais</th>
             <th>Nombre de Pais</th>
             <th>Capital</th>
             <th>Moneda</th>
+            <th>Video Ilustrativo</th>
         </thead>
         <tbody>
             <tr *ngFor="let pais of vectorPaises">
@@ -13,6 +14,7 @@
                 <td>{{pais.nombrePais}}</td>
                 <td>{{pais.capital}}</td>
                 <td>{{pais.moneda}}</td>
+                <td><p><a href={{pais.videoLink}}>Visita {{pais.nombrePais}}</a></p></td>
             </tr>
         </tbody>
 
