@@ -10,13 +10,18 @@ import { Pais } from '../models/Pais';
 })
 export class ConsumoApiComponent implements OnInit
 {
+  searchTerm: string = "";
+  filteredData: any[] = [];
+
+
+
   vectorPaises : Pais[] = [];
 
   constructor(private paisesServices : ConsumoApiPaisService){}
 
   ngOnInit(): void {
       //Aqui es donde yo hago el consumo del api
-
+    
       this.paisesServices.obtenerPaisesDelAPI().subscribe(
         data =>
           {           
