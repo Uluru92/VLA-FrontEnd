@@ -43,8 +43,30 @@ const EliminarPersona=(persona) =>{
         return error;
     }
 }
+
+const EditarPersona = (persona) => {
+    
+    try {
+        let informacionPersonas = require(db_archivo_directorio);
+        let personaExistente = informacionPersonas.PersonasRegistradas.find(p => p.userName === persona.userName);
+        
+        personaExistente.nombre = persona.nombre || personaExistente.nombre;
+        personaExistente.correo = persona.correo || personaExistente.correo;
+        personaExistente.userName = persona.userName || personaExistente.userName;
+        personaExistente.passWord = persona.passWord || personaExistente.passWord;
+
+        fs.writeFileSync(db_archivo_directorio, JSON.stringify(informacionPersonas, null, 2))
+        return 'Persona editada correctamente';
+    }
+    catch (error) {
+        return error;
+    }
+
+}
+
 module.exports = {
     ObtenerTodasLasPersonas,
     GuardarPersona,
-    EliminarPersona
+    EliminarPersona,
+    EditarPersona
 }

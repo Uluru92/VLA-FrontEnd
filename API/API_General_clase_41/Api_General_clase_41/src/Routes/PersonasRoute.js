@@ -6,7 +6,8 @@ router
     .get ("/ObtenerTodasLasPersonas", controladorPersonas.ObtenerTodasLasPersonas)
     .post ("/ValidarCredencialesLogin", controladorPersonas.ValidarCredencialesLogin)
     .post ("/RegistrarNuevaPersona", controladorPersonas.GuardarPersona)
-    .post ("/EliminarPersona", controladorPersonas.EliminarPersona)
+    .post("/EliminarPersona", controladorPersonas.EliminarPersona)
+    .post("/EditarPersona",controladorPersonas.EditarPersona)
 
 module.exports = router;
 

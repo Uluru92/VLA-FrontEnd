@@ -83,9 +83,36 @@ const EliminarPersona = (req, res) =>
         res.send(DetalleRespuesta);
     }
 
+const EditarPersona = (req, res) =>
+
+{
+    const informacionUsuario = req.body;
+    const TodasLasPersonas = personasBD.ObtenerTodasLasPersonas();
+    const existeUsuario = TodasLasPersonas.some(tx => tx.userName === informacionUsuario.userName);
+
+    let codigoDeRespuesta = 96;
+    let descripcionRespuesta = "Usuario no existe";
+
+    if (existeUsuario) {
+        personasBD.EditarPersona(informacionUsuario);
+        codigoDeRespuesta = 0;
+        descripcionRespuesta = "Persona Editada";
+    }
+
+    const DetalleRespuesta =
+    {
+        Codigo: codigoDeRespuesta,
+        Descripcion: descripcionRespuesta
+    }
+
+    res.send(DetalleRespuesta);
+}
+
+
 module.exports = {
     ObtenerTodasLasPersonas,
     ValidarCredencialesLogin,
     GuardarPersona,
-    EliminarPersona
+    EliminarPersona,
+    EditarPersona
 };
