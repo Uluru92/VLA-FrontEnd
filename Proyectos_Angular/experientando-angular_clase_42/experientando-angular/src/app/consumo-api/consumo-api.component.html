@@ -14,12 +14,12 @@
             <th>Video Ilustrativo</th>
         </thead>
         <tbody>
-            <tr *ngFor="let pais of vectorPaises">
-                <td>{{pais.idPais}}</td>
-                <td>{{pais.nombrePais}}</td>
-                <td>{{pais.capital}}</td>
-                <td>{{pais.moneda}}</td>
-                <td><p><a href={{pais.videoLink}}>Visita {{pais.nombrePais}}</a></p></td>
+            <tr *ngFor="let vectorPaises of filtrarPalabra()">
+                <td>{{vectorPaises.idPais}}</td>
+                <td>{{vectorPaises.nombrePais}}</td>
+                <td>{{vectorPaises.capital}}</td>
+                <td>{{vectorPaises.moneda}}</td>
+                <td><p><a href={{vectorPaises.videoLink}}>Visita {{vectorPaises.nombrePais}}</a></p></td>
             </tr>
         </tbody>
     </table>
