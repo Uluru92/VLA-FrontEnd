@@ -55,7 +55,7 @@ export class FormularioUnoComponent implements OnInit
   GuardarPersona(): void
   {
     let nuevaPersona = new Persona(this.nombrePersona, this.correoPersona,
-                                  this.userNamePersona, this.passWordPersona);
+      this.userNamePersona, this.passWordPersona);
 
     this.mostrarMensajeError = this.ValidarCampos();    
       
@@ -96,8 +96,7 @@ export class FormularioUnoComponent implements OnInit
 
   ValidarCampos(): boolean
   {
-    if(this.nombrePersona =="" || this.correoPersona==""|| this.userNamePersona==""
-      || this.passWordPersona == "")
+    if (this.userNamePersona == "" || this.correoPersona == "")
     return true;
 
     return false;
@@ -136,9 +135,39 @@ export class FormularioUnoComponent implements OnInit
     this.habilitarBotonEditar = true;
   }
 
-  EditarPersona(): void
-  {
-    alert("Hola Estoy desde persona!")
+  EditarPersona(): void {
+    
+
+    let nuevaPersona = new Persona(this.nombrePersona, this.correoPersona,
+      this.userNamePersona, this.passWordPersona);
+
+    this.mostrarMensajeError = this.ValidarCampos();
+
+    if (!this.mostrarMensajeError) {
+      this.personasServices.GuardarNuevaPersona(nuevaPersona).subscribe(
+        data => {
+          this.codigoRespuestaApi = data.Codigo;
+          this.descripcionRespuestaApi = data.Descripcion;
+
+          if (this.codigoRespuestaApi == 0) {
+            this.nombrePersona = "";
+            this.correoPersona = "";
+            this.userNamePersona = "";
+            this.passWordPersona = "";
+            this.VerTodasLasPersonas()
+            this.modalService.dismissAll(this.modalRespuesta);
+
+          }
+          this.modalService.open(this.modalRespuesta);
+        },
+        error => {
+          console.log("Hubo un error al guardar persona", error);
+        }
+      )
+    } else {
+      this.modalService.dismissAll(this.modalRespuesta);
+    }
+
   }
 
   ReestablecerConfiguracion(): void{
