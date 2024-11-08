@@ -11,6 +11,8 @@ import { Pais } from '../models/Pais';
 export class ConsumoApiComponent implements OnInit
 {
   palabraClave: string = "";
+  palabrasFiltradas: any[] = [];
+  paisesString: string = ""
 
   vectorPaises : Pais[] = [];
 
@@ -31,8 +33,24 @@ export class ConsumoApiComponent implements OnInit
       )
   }
 
-  filtrarPalabra(): void{
-    alert("Hola desde filtro!")
-  }
+  filtrarPalabra(): void
+  {
 
+    this.paisesServices.obtenerPaisesDelAPI().subscribe(
+      data => {
+        this.vectorPaises = data.DetalleRespuesta;
+        console.log(this.vectorPaises)
+      },
+      error => {
+        console.log("Error al cargar los paises", error)
+      }
+    )
+
+    const paisesString: string = this.vectorPaises.join(' ');
+
+    if (this.palabraClave.trim() !== '') {
+      alert(paisesString)
+
+    }
+  }
 }
