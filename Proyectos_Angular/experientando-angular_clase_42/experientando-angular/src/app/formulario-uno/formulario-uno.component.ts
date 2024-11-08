@@ -96,7 +96,7 @@ export class FormularioUnoComponent implements OnInit
 
   ValidarCampos(): boolean
   {
-    if (this.userNamePersona == "" || this.correoPersona == "")
+    if (this.correoPersona == "")
     return true;
 
     return false;
@@ -135,16 +135,24 @@ export class FormularioUnoComponent implements OnInit
     this.habilitarBotonEditar = true;
   }
 
-  EditarPersona(): void {
-    
+  ReestablecerConfiguracion(): void{
+    this.nombrePersona = "";
+    this.userNamePersona = "";
+    this.correoPersona = "";
+    this.passWordPersona = "";
 
+    this.habilitarBotonEditar = false;
+
+  }
+
+  EditarPersona(): void {
+    alert("desde editar!")
     let nuevaPersona = new Persona(this.nombrePersona, this.correoPersona,
       this.userNamePersona, this.passWordPersona);
-
     this.mostrarMensajeError = this.ValidarCampos();
 
     if (!this.mostrarMensajeError) {
-      this.personasServices.GuardarNuevaPersona(nuevaPersona).subscribe(
+      this.personasServices.EditarPersona(nuevaPersona).subscribe(
         data => {
           this.codigoRespuestaApi = data.Codigo;
           this.descripcionRespuestaApi = data.Descripcion;
@@ -156,7 +164,6 @@ export class FormularioUnoComponent implements OnInit
             this.passWordPersona = "";
             this.VerTodasLasPersonas()
             this.modalService.dismissAll(this.modalRespuesta);
-
           }
           this.modalService.open(this.modalRespuesta);
         },
@@ -167,16 +174,5 @@ export class FormularioUnoComponent implements OnInit
     } else {
       this.modalService.dismissAll(this.modalRespuesta);
     }
-
-  }
-
-  ReestablecerConfiguracion(): void{
-    this.nombrePersona = "";
-    this.userNamePersona = "";
-    this.correoPersona = "";
-    this.passWordPersona = "";
-
-    this.habilitarBotonEditar = false;
-
   }
 }

@@ -2,15 +2,15 @@
   "PersonasRegistradas": [
     {
       "nombre": "",
-      "correo": "jor_@gmail.com",
+      "correo": "jor_@gmail.commmmm",
       "userName": "Jorddy",
       "passWord": ""
     },
     {
-      "nombre": "",
-      "correo": "fab123@yahoo.com",
-      "userName": "Fabian",
-      "passWord": ""
+      "nombre": "Maria",
+      "correo": "fMaria@yahoo.com",
+      "userName": "Maria0123",
+      "passWord": "ABC123"
     },
     {
       "nombre": "",

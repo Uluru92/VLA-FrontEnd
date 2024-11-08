@@ -34,4 +34,8 @@ export class PersonasService
   EliminarPersona(persona: PersonaEliminar): Observable<any> {
     return this.http.post<any>(`${this.apiPersona}/EliminarPersona`, persona)
   }
+
+  EditarPersona(persona: Persona): Observable<any> {
+    return this.http.post<any>(`${this.apiPersona}/EditarPersona`, persona)
+  }
 }
