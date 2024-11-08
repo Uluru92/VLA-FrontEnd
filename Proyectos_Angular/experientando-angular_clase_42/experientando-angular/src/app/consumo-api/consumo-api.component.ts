@@ -31,4 +31,8 @@ export class ConsumoApiComponent implements OnInit
       )
   }
 
+  filtrarPalabra(): void{
+    alert("Hola desde filtro!")
+  }
+
 }
