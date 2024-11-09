@@ -16,7 +16,6 @@ export class ConsumoApiComponent implements OnInit
   constructor(private paisesServices : ConsumoApiPaisService){}
 
   ngOnInit(): void {
-      //Aqui es donde yo hago el consumo del api
     
       this.paisesServices.obtenerPaisesDelAPI().subscribe(
         data =>

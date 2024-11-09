@@ -146,7 +146,6 @@ export class FormularioUnoComponent implements OnInit
   }
 
   EditarPersona(): void {
-    alert("desde editar!")
     let nuevaPersona = new Persona(this.nombrePersona, this.correoPersona,
       this.userNamePersona, this.passWordPersona);
     this.mostrarMensajeError = this.ValidarCampos();
