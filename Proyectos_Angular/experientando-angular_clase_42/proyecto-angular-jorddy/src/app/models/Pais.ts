@@ -7,7 +7,7 @@ export class Pais
     poblacion: string = "";
     presidente: string = "";
     limitaCon: string = "";
-    noticiasRelevante: string = "";
+    noticiasRelevantes: string = "";
     lugaresTuristicos: string = "";
     videoLink: string = ""
 
@@ -30,7 +30,7 @@ export class Pais
         this.poblacion = pPoblacion;
         this.presidente = pPresidente;
         this.limitaCon = pLimitaCon;
-        this.noticiasRelevante = pNoticiasRelevantes;
+        this.noticiasRelevantes = pNoticiasRelevantes;
         this.lugaresTuristicos = pLugaresTuristicos;
         this.videoLink = pVideoLink;
     }
