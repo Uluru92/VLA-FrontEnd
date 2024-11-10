@@ -29,3 +29,5 @@ notas REACT
 
 node - v === para confirmar que version de node estamos usando y sea todo compatible
 npm install -g create-react-app === instalando react soporte de react 
+npx create-react-app mi-primer-app === crear un nuevo proytecto
+npm start === levanta inicializamos el localhost

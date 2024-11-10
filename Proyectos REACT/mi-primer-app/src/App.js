@@ -4,8 +4,12 @@ import MiPrimerComponente from './MiPrimerComponente';
 
 function App() {
   return (
-    <div className="App">
-      <MiPrimerComponente></MiPrimerComponente>
+    <div>
+      <MiPrimerComponente
+        Nombre="Jorddy"
+        Apellido1="Castro"
+        Apellido2= "Araya"
+      ></MiPrimerComponente>
     </div>
   );
 }
