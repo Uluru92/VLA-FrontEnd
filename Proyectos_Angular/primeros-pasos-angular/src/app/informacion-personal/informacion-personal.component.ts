@@ -9,4 +9,5 @@ export class InformacionPersonalComponent {
   @Input() nombrePersona: string = "";
   @Input() apellidoPersona: string = "";
   @Input() edadPersona: string = "";
+
 }

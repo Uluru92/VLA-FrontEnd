@@ -4,6 +4,8 @@ import MiPrimerComponente from './components/MiPrimerComponente';
 
 function App() {
 
+  
+
   function ManejarClic() {
     alert("Usted me ha dado clic");
     }
@@ -20,3 +22,4 @@ function App() {
 }
 
 export default App;
+
