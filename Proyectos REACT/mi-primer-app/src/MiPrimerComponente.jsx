@@ -7,7 +7,6 @@ function MiPrimerComponente(props)
             <h3>Mi nombre es: {props.Nombre} {props.Apellido1} {props.Apellido2}</h3>
         </div>
     )    
-
 }
 
 export default MiPrimerComponente;
