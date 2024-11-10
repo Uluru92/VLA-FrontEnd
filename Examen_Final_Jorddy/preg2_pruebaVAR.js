@@ -20,3 +20,8 @@ function pruebaVAR(b) {
 console.log(a) //el valor de a se mantiene en 10 fuera de la funcion
 pruebaVAR(a)
 
+
+
+
+let a: string = "jorddy";
+let a = "adolfo";

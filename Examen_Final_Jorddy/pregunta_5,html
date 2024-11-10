@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Ejemplo appendChild</title>
+</head>
+
+<body>
+  <label for="paises">Selecciona un país:</label>
+  <select id="paises"></select>
+
+  <script>
+    const paises = ['Argentina', 'Brasil', 'Chile', 'México', 'España', 'Colombia']; 
+    const selectElement = document.getElementById('paises');
+
+    paises.forEach(function(pais) {
+      const opcion = document.createElement('opcion');
+      opcion.value = pais;
+      opcion.textContent = pais;
+      selectElement.appendChild(opcion); //Acá utilizamos el método para agregar opciones al vector paises
+    });
+  </script>
+</body>
+
+</html>
