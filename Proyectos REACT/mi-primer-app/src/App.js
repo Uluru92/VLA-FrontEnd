@@ -1,6 +1,6 @@
 import logo from './logo.svg';
 import './App.css';
-import MiPrimerComponente from './MiPrimerComponente';
+import MiPrimerComponente from './components/MiPrimerComponente';
 
 function App() {
   return (
