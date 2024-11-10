@@ -1,0 +1,69 @@
+<div class="container">
+    <h1>Formulario de reservación</h1>
+    <input [attr.disabled]="habilitarBotonEditar ? true: null" type="text" class="form-control" [(ngModel)]="userNamePersona" placeholder="Usuario">
+    <div class="d-flex justify-content-end">
+        <span *ngIf="mostrarMensajeError" style="color: red;">{{mensajeUserNamePersona}}</span>
+    </div>
+    <br>
+    <input type="text" class="form-control" [(ngModel)]="correoPersona" placeholder="Correo de la persona">
+    <div class="d-flex justify-content-end">
+        <span *ngIf="mostrarMensajeError" style="color: red;">{{mensajeCorreoPersona}}</span>
+    </div>
+    <br>
+
+    <button *ngIf="!habilitarBotonEditar" (click)="AbrirModal(ContenedorGuardarPersona)" class="btn btn-success"style="margin: 10px;">Guardar</button>
+    <button *ngIf="habilitarBotonEditar" (click)="AbrirModal(ContenedorGuardarPersona)" class="btn btn-warning" style="margin: 10px;">Editar</button>
+    <button (click)="ReestablecerConfiguracion()" class="btn btn-primary">Refrescar</button>
+    <table class="table">
+        <thead>
+            <tr>
+                <th>Estado</th>
+                <th>Usuario</th>
+                <th>Correo</th>
+            </tr>
+        </thead>
+        <tbody>
+            <!--Mapeo del vector que leemos en el ts-->
+            <tr *ngFor="let per of personas; let i = index">
+                <td>Pendiente de Revisión</td>
+                <td>{{per.userName}}</td>
+                <td>{{per.correo}}</td>
+                <td>
+                    <button (click)="EliminarPersona(i)" class="btn btn-danger" style="margin: 10px;">Eliminar</button>
+                    <button (click)="BotonEditarPersona(i)" class="btn btn-warning" style="margin: 10px;">Modificar</button>
+                </td>
+            </tr>
+        </tbody>
+    </table>
+
+
+    <ng-template #ContenedorGuardarPersona let-modal>
+        <div class="modal-header">
+            <h4 class="modal-title">Registrar Reservación</h4>            
+        </div>
+        <div class="modal-body">
+            <p>Usuario: {{userNamePersona}}</p>
+            <p>Correo: {{correoPersona}}</p>
+        </div>
+        <div class="modal-footer">
+            <button class="btn btn-danger" (click)="modal.dismiss()">Cancelar</button>
+            <button *ngIf="habilitarBotonEditar==false" class="btn btn-success" (click)="GuardarPersona()" >Aceptar</button>
+            <button *ngIf="habilitarBotonEditar" class="btn btn-success" (click)="EditarPersona()" >Aceptar</button>
+            
+        </div>
+    </ng-template> 
+
+
+    <ng-template #ContenedorRespuesta let-modal>
+        <div class="modal-header">
+            <h4 class="modal-title">Respuesta del Servicio</h4>            
+        </div>
+        <div class="modal-body">
+
+            <p>{{descripcionRespuestaApi}}</p>
+        </div>
+        <div class="modal-footer">
+            <button class="btn btn-danger" (click)="modal.dismiss()">Cerrar</button>
+        </div>
+    </ng-template>
+</div>

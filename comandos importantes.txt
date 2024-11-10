@@ -1,6 +1,5 @@
 notas angular
 
-
 npm init   === iniciamos proyecto y creamos el archivo package.json
 npm run dev === inicializamos la API
 ng serve  === inicializamos el localhost
@@ -24,3 +23,9 @@ pagina de recursos botones:
 -bootstrap
 -material framework design
 -tailwindcss.com
+
+
+notas REACT
+
+node - v === para confirmar que version de node estamos usando y sea todo compatible
+npm install -g create-react-app === instalando react soporte de react 

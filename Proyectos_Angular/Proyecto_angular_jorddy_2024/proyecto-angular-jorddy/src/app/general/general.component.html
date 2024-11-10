@@ -1,0 +1,188 @@
+<div style="text-align: center;">
+    <h4>
+        Acompañanos a visitar tu destino favorito!
+    </h4>
+    <ngb-carousel>
+    <ng-template ngbSlide>
+        <div class="picsum-img-wrapper">
+            <img src="../../assets/img/Costa Roca.jpg" alt="Random second slide" />
+        </div>
+        <div class="carousel-caption"style="background-color: rgba(0, 0, 0, 0.597);">
+            <h3>{{vectorPaises[0].nombrePais}}</h3>
+            <p> {{"| "+vectorPaises[0].lugaresTuristicos[0]+" |"}}
+                {{"| "+vectorPaises[0].lugaresTuristicos[1]+" |"}}
+                {{"| "+vectorPaises[0].lugaresTuristicos[2]+" |"}}
+            </p>
+            <a routerLink="/FormularioUno" class="nav-link" href="#"><button class="btn btn-warning">Reserva tu espacio!</button></a>
+            <br><br>
+            <div style="background-color: rgba(245, 245, 220, 0.361); text-align: justify; padding: 30px; margin: 30px;">
+                <p> Noticias recientes de este país:</p>
+            <p> {{"1) "+vectorPaises[0].noticiasRelevantes[0]}}</p>
+            <p> {{"2) "+vectorPaises[0].noticiasRelevantes[1]}}</p>
+            <p> {{"3) "+vectorPaises[0].noticiasRelevantes[2]}}</p>
+            </div>
+        </div>
+    </ng-template>
+        <ng-template ngbSlide>
+        <div class="picsum-img-wrapper" >
+            <img src="../../assets/img/panama.jpg" alt="Random second slide" />
+        </div>
+        <div class="carousel-caption"style="background-color: rgba(0, 0, 0, 0.597);">
+            <h3>{{vectorPaises[1].nombrePais}}</h3>
+            <p> {{"| "+vectorPaises[1].lugaresTuristicos[0]+" |"}}
+                {{"| "+vectorPaises[1].lugaresTuristicos[1]+" |"}}
+                {{"| "+vectorPaises[1].lugaresTuristicos[2]+" |"}}
+            </p>
+            <a routerLink="/FormularioUno" class="nav-link" href="#"><button class="btn btn-warning">Reserva tu espacio!</button></a>
+            <br><br>
+            <div style="background-color: rgba(245, 245, 220, 0.361); text-align: justify; padding: 30px; margin: 30px;">
+                <p> Noticias recientes de este país:</p>
+                <p> {{"1) "+vectorPaises[1].noticiasRelevantes[0]}}</p>
+                <p> {{"2) "+vectorPaises[1].noticiasRelevantes[1]}}</p>
+                <p> {{"3) "+vectorPaises[1].noticiasRelevantes[2]}}</p>
+            </div>
+        </div>
+    </ng-template>
+        <ng-template ngbSlide>
+            <div class="picsum-img-wrapper">
+                <img src="../../assets/img/Colombia.jpg" alt="Random second slide" />
+            </div>
+            <div class="carousel-caption"style="background-color: rgba(0, 0, 0, 0.597);">
+                <h3>{{vectorPaises[2].nombrePais}}</h3>
+                <p> {{"| "+vectorPaises[2].lugaresTuristicos[0]+" |"}}
+                    {{"| "+vectorPaises[2].lugaresTuristicos[1]+" |"}}
+                    {{"| "+vectorPaises[2].lugaresTuristicos[2]+" |"}}
+                </p>
+                <a routerLink="/FormularioUno" class="nav-link" href="#"><button class="btn btn-warning">Reserva tu
+                        espacio!</button></a>
+                <br><br>
+                <div style="background-color: rgba(245, 245, 220, 0.361); text-align: justify; padding: 30px; margin: 30px;">
+                    <p> Noticias recientes de este país:</p>
+                    <p> {{"1) "+vectorPaises[2].noticiasRelevantes[0]}}</p>
+                    <p> {{"2) "+vectorPaises[2].noticiasRelevantes[1]}}</p>
+                    <p> {{"3) "+vectorPaises[2].noticiasRelevantes[2]}}</p>
+                </div>
+            </div>
+        </ng-template><ng-template ngbSlide>
+            <div class="picsum-img-wrapper">
+                <img src="../../assets/img/ElSalvador.jpg" alt="Random second slide" />
+            </div>
+            <div class="carousel-caption"style="background-color: rgba(0, 0, 0, 0.597);">
+                <h3>{{vectorPaises[3].nombrePais}}</h3>
+                <p> {{"| "+vectorPaises[3].lugaresTuristicos[0]+" |"}}
+                    {{"| "+vectorPaises[3].lugaresTuristicos[1]+" |"}}
+                    {{"| "+vectorPaises[3].lugaresTuristicos[2]+" |"}}
+                </p>
+                <a routerLink="/FormularioUno" class="nav-link" href="#"><button class="btn btn-warning">Reserva tu
+                        espacio!</button></a>
+                <br><br>
+                <div style="background-color: rgba(245, 245, 220, 0.361); text-align: justify; padding: 30px; margin: 30px;">
+                    <p> Noticias recientes de este país:</p>
+                    <p> {{"1) "+vectorPaises[3].noticiasRelevantes[0]}}</p>
+                    <p> {{"2) "+vectorPaises[3].noticiasRelevantes[1]}}</p>
+                    <p> {{"3) "+vectorPaises[3].noticiasRelevantes[2]}}</p>
+                </div>
+            </div>
+        </ng-template><ng-template ngbSlide>
+            <div class="picsum-img-wrapper">
+                <img src="../../assets/img/Argentina.jpg" alt="Random second slide" />
+            </div>
+            <div class="carousel-caption"style="background-color: rgba(0, 0, 0, 0.597);">
+                <h3>{{vectorPaises[4].nombrePais}}</h3>
+                <p> {{"| "+vectorPaises[4].lugaresTuristicos[0]+" |"}}
+                    {{"| "+vectorPaises[4].lugaresTuristicos[1]+" |"}}
+                    {{"| "+vectorPaises[4].lugaresTuristicos[2]+" |"}}
+                </p>
+                <a routerLink="/FormularioUno" class="nav-link" href="#"><button class="btn btn-warning">Reserva tu
+                        espacio!</button></a>
+                <br><br>
+                <div style="background-color: rgba(245, 245, 220, 0.361); text-align: justify; padding: 30px; margin: 30px;">
+                    <p> Noticias recientes de este país:</p>
+                    <p> {{"1) "+vectorPaises[4].noticiasRelevantes[0]}}</p>
+                    <p> {{"2) "+vectorPaises[4].noticiasRelevantes[1]}}</p>
+                    <p> {{"3) "+vectorPaises[4].noticiasRelevantes[2]}}</p>
+                </div>
+            </div>
+        </ng-template><ng-template ngbSlide>
+            <div class="picsum-img-wrapper">
+                <img src="../../assets/img/Mexico.jpg" alt="Random second slide" />
+            </div>
+            <div class="carousel-caption" style="background-color: rgba(0, 0, 0, 0.597);">
+                <h3>{{vectorPaises[5].nombrePais}}</h3>
+                <p> {{"| "+vectorPaises[5].lugaresTuristicos[0]+" |"}}
+                    {{"| "+vectorPaises[5].lugaresTuristicos[1]+" |"}}
+                    {{"| "+vectorPaises[5].lugaresTuristicos[2]+" |"}}
+                </p>
+                <a routerLink="/FormularioUno" class="nav-link" href="#"><button class="btn btn-warning">Reserva tu
+                        espacio!</button></a>
+                <br><br>
+                <div style="background-color: rgba(245, 245, 220, 0.361); text-align: justify; padding: 30px; margin: 30px;">
+                    <p> Noticias recientes de este país:</p>
+                    <p> {{"1) "+vectorPaises[5].noticiasRelevantes[0]}}</p>
+                    <p> {{"2) "+vectorPaises[5].noticiasRelevantes[1]}}</p>
+                    <p> {{"3) "+vectorPaises[5].noticiasRelevantes[2]}}</p>
+                </div>
+            </div>
+        </ng-template><ng-template ngbSlide>
+            <div class="picsum-img-wrapper">
+                <img src="../../assets/img/Brasil.jpg" alt="Random second slide" />
+            </div>
+            <div class="carousel-caption"style="background-color: rgba(0, 0, 0, 0.597);">
+                <h3>{{vectorPaises[6].nombrePais}}</h3>
+                <p> {{"| "+vectorPaises[6].lugaresTuristicos[0]+" |"}}
+                    {{"| "+vectorPaises[6].lugaresTuristicos[1]+" |"}}
+                    {{"| "+vectorPaises[6].lugaresTuristicos[2]+" |"}}
+                </p>
+                <a routerLink="/FormularioUno" class="nav-link" href="#"><button class="btn btn-warning">Reserva tu
+                        espacio!</button></a>
+                 <br><br>
+                <div style="background-color: rgba(245, 245, 220, 0.361); text-align: justify; padding: 30px; margin: 30px;">
+                    <p> Noticias recientes de este país:</p>
+                    <p> {{"1) "+vectorPaises[6].noticiasRelevantes[0]}}</p>
+                    <p> {{"2) "+vectorPaises[6].noticiasRelevantes[1]}}</p>
+                    <p> {{"3) "+vectorPaises[6].noticiasRelevantes[2]}}</p>
+                </div>
+            </div>
+        </ng-template><ng-template ngbSlide>
+            <div class="picsum-img-wrapper">
+                <img src="../../assets/img/Chile.jpg" alt="Random second slide" />
+            </div>
+            <div class="carousel-caption" style="background-color: rgba(0, 0, 0, 0.597);">
+                <h3>{{vectorPaises[7].nombrePais}}</h3>
+                <p> {{"| "+vectorPaises[7].lugaresTuristicos[0]+" |"}}
+                    {{"| "+vectorPaises[7].lugaresTuristicos[1]+" |"}}
+                    {{"| "+vectorPaises[7].lugaresTuristicos[2]+" |"}}
+                </p>
+                <a routerLink="/FormularioUno" class="nav-link" href="#"><button class="btn btn-warning">Reserva tu
+                        espacio!</button></a>
+                <br><br>
+                <div style="background-color: rgba(245, 245, 220, 0.361); text-align: justify; padding: 30px; margin: 30px;">
+                    <p> Noticias recientes de este país:</p>
+                    <p> {{"1) "+vectorPaises[7].noticiasRelevantes[0]}}</p>
+                    <p> {{"2) "+vectorPaises[7].noticiasRelevantes[1]}}</p>
+                    <p> {{"3) "+vectorPaises[7].noticiasRelevantes[2]}}</p>
+                </div>
+            </div>
+        </ng-template><ng-template ngbSlide>
+            <div class="picsum-img-wrapper">
+                <img src="../../assets/img/Peru.jpg" alt="Random second slide" />
+            </div>
+            <div class="carousel-caption" style="background-color: rgba(0, 0, 0, 0.597);">
+                <h3>{{vectorPaises[8].nombrePais}}</h3>
+                <p> {{"| "+vectorPaises[8].lugaresTuristicos[0]+" |"}}
+                    {{"| "+vectorPaises[8].lugaresTuristicos[1]+" |"}}
+                    {{"| "+vectorPaises[8].lugaresTuristicos[2]+" |"}}
+                </p>
+                <a routerLink="/FormularioUno" class="nav-link" href="#"><button class="btn btn-warning">Reserva tu
+                        espacio!</button></a>
+                <br><br>
+                <div style="background-color: rgba(245, 245, 220, 0.361); text-align: justify; padding: 30px; margin: 30px;">
+                    <p> Noticias recientes de este país:</p>
+                    <p> {{"1) "+vectorPaises[8].noticiasRelevantes[0]}}</p>
+                    <p> {{"2) "+vectorPaises[8].noticiasRelevantes[1]}}</p>
+                    <p> {{"3) "+vectorPaises[8].noticiasRelevantes[2]}}</p>
+                </div>
+            </div>
+        </ng-template>
+    </ngb-carousel>
+</div>
