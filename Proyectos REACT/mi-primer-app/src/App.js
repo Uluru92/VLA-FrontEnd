@@ -6,9 +6,8 @@ import ContadorLikes from './components/ContadorLikes';
 function App() {
 
   return (
-    <div>
-      <h1>Aprendiendo UseState - Ejemplo 1</h1>
-      
+    <div className='container'>
+      <h1>Aprendiendo UseState - Ejemplo 1</h1>      
       <ContadorLikes></ContadorLikes>
     </div>
   );
