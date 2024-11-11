@@ -1,25 +1,17 @@
 import logo from './logo.svg';
 import './App.css';
 import MiPrimerComponente from './components/MiPrimerComponente';
+import ContadorLikes from './components/ContadorLikes';
 
 function App() {
 
-  
-
-  function ManejarClic() {
-    alert("Usted me ha dado clic");
-    }
-
   return (
     <div>
-      <MiPrimerComponente
-        Nombre="Jorddy"
-        Apellido1="Castro"
-        Apellido2="Araya"
-      ></MiPrimerComponente>
+      <h1>Aprendiendo UseState - Ejemplo 1</h1>
+      
+      <ContadorLikes></ContadorLikes>
     </div>
   );
 }
 
 export default App;
-
