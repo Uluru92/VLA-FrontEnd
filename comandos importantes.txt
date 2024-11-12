@@ -32,3 +32,5 @@ npm install -g create-react-app === instalando react soporte de react
 npx create-react-app mi-primer-app === crear un nuevo proytecto
 npm start === levanta inicializamos el localhost
 npm install bootstrap === instalamos bootstrap
+npm install react-router-dom ===
+npm install --save typescript @types/react @types/react-dom ===
