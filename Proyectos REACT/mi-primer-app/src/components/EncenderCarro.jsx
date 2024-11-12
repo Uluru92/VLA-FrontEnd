@@ -6,7 +6,6 @@ function EncenderCarro() {
 
     function EncenderApagar() {
         setEstadoCarro(!estadoCarro);
-
     }
 
     return (
