@@ -36,3 +36,7 @@ npm install react-router-dom === ***instalar al puro inicio después de crear el
 npm i -D react-router-dom@latest === ***instalar la ultima version de react router
 npm install --save typescript @types/react @types/react-dom ===
 create-react-app laboratorio-jorddy --template typescript === esto es para crear un proyecto nuevo default ts
+npm i react-bootstrap === instalar componente react bootstrap
+npm installa axios === para consumo de las apis
+npm i react-scripts 
+npm install react-scripts@latest === instalar ultima version de react-scripts
