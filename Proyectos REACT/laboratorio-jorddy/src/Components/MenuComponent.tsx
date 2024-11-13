@@ -19,9 +19,9 @@ function MenuComponent() {
                                 <NavDropdown.Item as={Link} to={'hookusestate'}>Use State</NavDropdown.Item>
                                 <NavDropdown.Item as={Link} to={'hookuseref'}>Use Ref</NavDropdown.Item>
                             </NavDropdown>
-                            <NavDropdown title="Aspectos Generales" id="basic-nav-dropdown">
+                            <NavDropdown title="Generales" id="basic-nav-dropdown">
                                 <NavDropdown.Item href="#action/3.1">Carruseles</NavDropdown.Item>
-                                <NavDropdown.Item href="#action/3.2">Formularios</NavDropdown.Item>
+                                <NavDropdown.Item as={Link} to={'formulario'}>Formularios</NavDropdown.Item>
                                 <NavDropdown.Item href="#action/3.2">Apis</NavDropdown.Item>
                                 <NavDropdown.Item href="#action/3.2">Modal</NavDropdown.Item>
                             </NavDropdown>
