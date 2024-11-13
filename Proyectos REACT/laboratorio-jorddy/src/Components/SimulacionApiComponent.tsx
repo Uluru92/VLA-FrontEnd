@@ -3,7 +3,6 @@ import { useEffect, useState } from "react";
 const SimulacionApiComponent: React.FC = () =>
 {
     const [paises, setPaises] = useState<string[]>([]);
-    const [mostrarMensaje, setMostrarMensaje] = useState(false)
     const [estaCargando, setEstaCargando] = useState<boolean>(false);
     
     useEffect(() => {
