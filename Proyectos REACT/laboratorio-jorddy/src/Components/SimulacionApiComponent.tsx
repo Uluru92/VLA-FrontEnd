@@ -18,7 +18,7 @@ const SimulacionApiComponent: React.FC = () =>
         },[])
         
     return (
-        <div className="contanier">
+        <div className="container">
             <h3>Ejercicio Hook 2</h3>
             <h4>Los datos del API son:</h4>
 
