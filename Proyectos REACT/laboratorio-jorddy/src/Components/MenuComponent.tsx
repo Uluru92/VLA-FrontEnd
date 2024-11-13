@@ -17,6 +17,7 @@ function MenuComponent() {
                             <NavDropdown title="Hooks" id="basic-nav-dropdown">
                                 <NavDropdown.Item as={Link} to={'hookusestate'}>Use State</NavDropdown.Item>
                                 <NavDropdown.Item as={Link} to={'hookuseref'}>Use Ref</NavDropdown.Item>
+                                <NavDropdown.Item as={Link} to={'hookuseeffect'}>Use Effect</NavDropdown.Item>
                             </NavDropdown>
                             <NavDropdown title="Generales" id="basic-nav-dropdown">
                                 <NavDropdown.Item href="#action/3.1">Carruseles</NavDropdown.Item>
