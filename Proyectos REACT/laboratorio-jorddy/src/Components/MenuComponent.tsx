@@ -1,7 +1,9 @@
+import { link } from 'fs';
 import Container from 'react-bootstrap/Container';
 import Nav from 'react-bootstrap/Nav';
 import Navbar from 'react-bootstrap/Navbar';
 import NavDropdown from 'react-bootstrap/NavDropdown';
+import { Link } from 'react-router-dom';
 
 function MenuComponent() {
     return (
@@ -13,11 +15,9 @@ function MenuComponent() {
                     <Navbar.Toggle aria-controls="basic-navbar-nav" />
                     <Navbar.Collapse id="basic-navbar-nav">
                         <Nav className="me-auto">
-                            <Nav.Link href="#home">Home</Nav.Link>
-                            <Nav.Link href="#link">Link</Nav.Link>
                             <NavDropdown title="Hooks" id="basic-nav-dropdown">
-                                <NavDropdown.Item href="#action/3.1">Use State</NavDropdown.Item>
-                                <NavDropdown.Item href="#action/3.2">Use Ref</NavDropdown.Item>
+                                <NavDropdown.Item as={Link} to={'hookusestate'}>Use State</NavDropdown.Item>
+                                <NavDropdown.Item as={Link} to={'hookuseref'}>Use Ref</NavDropdown.Item>
                             </NavDropdown>
                             <NavDropdown title="Aspectos Generales" id="basic-nav-dropdown">
                                 <NavDropdown.Item href="#action/3.1">Carruseles</NavDropdown.Item>
