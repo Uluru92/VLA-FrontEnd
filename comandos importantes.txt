@@ -40,3 +40,4 @@ npm i react-bootstrap === instalar componente react bootstrap
 npm installa axios === para consumo de las apis
 npm i react-scripts 
 npm install react-scripts@latest === instalar ultima version de react-scripts
+https://developer.mozilla.org/es/docs/Web/API/Window/clearInterval === documentacion HTML intervalos etc
