@@ -6,6 +6,7 @@ import HookUseRefView from './Views/HookUseRefView';
 import HookUseStateView from './Views/HookUseStateView';
 import HookUseEffectView from './Views/HookUseEffectView';
 import FormularioComponent from './Components/FormularioComponent';
+import SimulacionApiComponent from './Components/SimulacionApiComponent';
 import { BrowserRouter as Router, Route, Routes } from "react-router-dom";
 
 const root = ReactDOM.createRoot(document.getElementById('root')!);
@@ -19,6 +20,7 @@ root.render(
         <Route path='/hookuseref' element={<HookUseRefView />} />
         <Route path='/formulario' element={<FormularioComponent />} />
         <Route path='/hookuseeffect' element={<HookUseEffectView />} />
+        <Route path='/hookuseeffect' element={<SimulacionApiComponent />} />
       </Route>
     </Routes>
   </Router>,
