@@ -1,10 +1,10 @@
-import './index.css';
+import App from './App';
 import ReactDOM from 'react-dom/client';
 import 'bootstrap/dist/css/bootstrap.min.css'
 import reportWebVitals from './reportWebVitals';
+import HookUseRefView from './Views/HookUseRefView';
 import HookUseStateView from './Views/HookUseStateView';
 import { BrowserRouter as Router, Route, Routes } from "react-router-dom";
-import HookUseRefView from './Views/HookUseRefView';
 
 const root = ReactDOM.createRoot(document.getElementById('root')!);
 
@@ -12,10 +12,13 @@ root.render(
   
   <Router>
     <Routes>
-      <Route path='/hookusestate' element={<HookUseStateView />} />
-      <Route path='/hookuseref' element={<HookUseRefView />} />
+      <Route path='/' element={<App />}>
+        <Route path='/hookusestate' element={<HookUseStateView />} />
+        <Route path='/hookuseref' element={<HookUseRefView />} />
+      </Route>
     </Routes>
- </Router>
+  </Router>,
+  
 );
 
 reportWebVitals();
