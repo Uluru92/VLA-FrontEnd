@@ -6,9 +6,7 @@ const HookUseStateView: React.FC = () => //Asi se declara un componente en la vi
 {
     return (
         <div>
-            <MenuComponent
 
-            ></MenuComponent>
         </div >
     )
 }

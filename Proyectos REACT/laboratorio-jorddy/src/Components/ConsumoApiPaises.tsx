@@ -1,18 +1,25 @@
 import axios from "axios";
 import { useEffect, useState } from "react";
+import { Paises } from "../Models/Paises";
+
 
 const ComsumoapiPaises: React.FC = () => {
-    const [paises, setPaises] = useState<string[]>([]);
+    const [paises, setPaises] = useState<Paises[]>([]);
     const [estaCargando, setEstaCargando] = useState<boolean>(false);
 
     useEffect(() => {
-        const api_paises = axios.get('http://localhost:3015/api/route/ObtenerTodosLosPaises');
-            setPaises(api_paises);
-    }, [])
+        const consumoApiPaises = async () =>
+        {
+            const api_paises = await axios.get('http://localhost:3015/api/route/ObtenerTodosLosPaises');
+            setPaises(api_paises.data.DetalleRespuesta);
+        }
+
+        consumoApiPaises();
+    },[])
 
     return (
         <div className="container">
-            <h3>Ejercicio Hook 2</h3>
+            <h3>Ejercicio Hook 4</h3>
             <h4>Los datos del API son:</h4>
 
             {
@@ -22,9 +29,9 @@ const ComsumoapiPaises: React.FC = () => {
                     <select className="form-select">
                         <option value='0'>Seleccione un país</option>
                         {
-                            paises.map((pais, index) => (
-                                <option key={index}>{pais}</option>
-                            ))
+                                paises.map((pais, index)=>(
+                                    <option key={index} value={pais.idPais}>{pais.nombrePais}</option>
+                                ))
                         }
                     </select>
                 )

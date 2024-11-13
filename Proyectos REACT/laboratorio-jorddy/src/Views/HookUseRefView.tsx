@@ -5,9 +5,7 @@ const HookUseRefView: React.FC = () => //Asi se declara un componente en la vida
 {
     return (
         <div>
-            <MenuComponent
 
-            ></MenuComponent>
         </div >
     )
 }
