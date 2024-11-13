@@ -1,7 +1,7 @@
 import axios from "axios";
 import { useEffect, useState } from "react";
 import { Paises } from "../Models/Paises";
-
+import API_ENDPOINTS from "../Endpoints";
 
 const ComsumoapiPaises: React.FC = () => {
     const [paises, setPaises] = useState<Paises[]>([]);
@@ -10,7 +10,7 @@ const ComsumoapiPaises: React.FC = () => {
     useEffect(() => {
         const consumoApiPaises = async () =>
         {
-            const api_paises = await axios.get('http://localhost:3015/api/route/ObtenerTodosLosPaises');
+            const api_paises = await axios.get(API_ENDPOINTS.obtenerTodosLosPaises);
             setPaises(api_paises.data.DetalleRespuesta);
         }
 
