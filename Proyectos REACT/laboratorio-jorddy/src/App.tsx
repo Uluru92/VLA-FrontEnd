@@ -15,4 +15,4 @@ const App: React.FC = () => {
 
 export default App;
 
-//El outlet unicamente se usa en el en orquestador en este caso .App
+//outlet unicamente se usa en .App viene siendo el analogo de <router-view>
