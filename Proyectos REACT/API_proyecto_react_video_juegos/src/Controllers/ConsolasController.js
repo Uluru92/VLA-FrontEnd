@@ -8,7 +8,7 @@ const ObtenerConsolas = (req, res) =>
     const DetalleRespuesta = 
     {
         Codigo: 0,
-        Descripcion: "Transaccion exitosa",
+        Descripcion: "Transaccion Exitosa",
         Detalle: detalle
     }
 

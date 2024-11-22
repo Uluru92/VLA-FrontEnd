@@ -1,0 +1,19 @@
+{
+    "Consolas": [
+        {
+            "id": 1,
+            "nombre": "Play Station 5",
+            "imagen": "PlayStationConsola.png"
+        },
+        {
+            "id": 2,
+            "nombre": "Xbox XS",
+            "imagen": "XboxXs.png"
+        },
+        {
+            "id": 3,
+            "nombre": "Nintendo Switch",
+            "imagen": "NintendoSwitch.png"
+        }
+    ]
+}
