@@ -18,3 +18,8 @@ const ObtenerConsolas = (req, res) =>
 module.exports = {
     ObtenerConsolas
 };
+
+//Tarea
+//ObtenerVideoJuegosPorConsola (int idConsola)
+//Devuelve: todos los video juegos de la consola
+//creem toda la estructura de las demas clases bd, controller, router, integracion en el indexjs
